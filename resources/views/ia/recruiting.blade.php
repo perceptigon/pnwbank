@@ -54,19 +54,10 @@
                                 <label>Message</label>
                                 <p>Hey {nation->leader},</p>
                                 <textarea rows="15" name="recruitMessage" class="form-control">{{ $recruitMessage->value }}</textarea>
-                                <p>If you would like to join BK, then I think you made the right choice. Getting the process of joining started is easy. Just follow these steps:
-                                    <br>
-                                    -- Join our alliance in-game here: https://politicsandwar.com/alliance/id=877
-                                    <br>
-                                    -- [link=http://bkpw.net/register/?core_pfield_11={nationID}]Register an account on our forums here[/link] (We've filled out the nation ID field for you)
-                                    <br>
-                                    -- Submit an application. [link=http://bkpw.net/topic/356-how-to-apply-to-the-black-knights/]Instructions here[/link]
+                                <p>
                                     <br>
                                     <br>
-                                    However, if you feel that BK isn't for you, I wish you the best of luck and I hope you are happy with the alliance you chose.
-                                    <br>
-                                    <br>
-                                    As always, if you have any questions about BK or the game, in general, let me know and I will get back to you as soon as possible.
+                                    As always, if you have any questions about Camelot or the game, in general, let me know and I will get back to you as soon as possible.
                                     <br>
                                     <br>
                                     Thanks!</p>
