@@ -282,7 +282,7 @@ class UserController extends Controller
     public function dashboard()
     {
         $defNation = DefenseNations::getNation(Auth::user()->nID);
-        if (! $defNation->inBK) // If they're not in BK, redirect to home because fuck them
+        if (! $defNation->inBK) // If they're not in Camelot, redirect to home because fuck them
             return redirect("/");
 
         $mmrScore = Warchest::mmrScoreFromDefNations($defNation);

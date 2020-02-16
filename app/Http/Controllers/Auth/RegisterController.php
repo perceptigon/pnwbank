@@ -66,7 +66,7 @@ class RegisterController extends Controller
                 $nation = new Nation($data["nID"]);
 
                 if ($nation->aID != 4937)
-                    $validator->errors()->add('field', "That nation isn't in BK");
+                    $validator->errors()->add('field', "That nation isn't in Camelot");
 
                 if ($nation->alliancePosition == 1)
                     $validator->errors()->add('field', "Please wait until you are accept in-game to create your account");

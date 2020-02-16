@@ -69,7 +69,7 @@ class DefenseSignin extends Model
         $profile = DefenseProfiles::getProfile($request->nID);
 
         if ($nation->aID != 4937)
-            throw new \Exception("You are not in BK");
+            throw new \Exception("You are not in Camelot");
         if ($nation->alliancePosition < 2)
             throw new \Exception("Applicants do not need to sign in");
         // Now to check the 24 hour rule
