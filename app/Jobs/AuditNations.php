@@ -451,7 +451,7 @@ class AuditNations extends Job implements ShouldQueue
     {
         if (! $this->mmr->checkIfSignedIn())
         {
-            $this->message .= "-- You haven't signed in yet. Please go [link=https://bkpw.net/bkn/signin]here[/link] to sign in \n";
+            $this->message .= "-- You haven't signed in yet. Please go [link=https://camelotpnw.tech/signin]here[/link] to sign in \n";
         }
         else
         {

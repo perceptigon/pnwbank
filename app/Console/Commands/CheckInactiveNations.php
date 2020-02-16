@@ -29,7 +29,7 @@ class CheckInactiveNations extends Command
      *
      * @var int
      */
-    protected $inactiveCutoff = 4320;
+    protected $inactiveCutoff = 2880;
 
     /**
      * Array of BK Nations

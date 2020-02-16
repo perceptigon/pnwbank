@@ -27,7 +27,7 @@ class Inactivity extends Model
             "isInactive" => true
         ]);
 
-        $client->modifyMemberTaxBracket($nID, 203);
+        $client->modifyMemberTaxBracket($nID, 8702);
 
         $inactive->notifyMember($nID, $client);
     }
@@ -58,7 +58,7 @@ class Inactivity extends Model
         $this->isInactive = false;
         $this->save();
 
-        $client->modifyMemberTaxBracket($this->nID, 78);
+        $client->modifyMemberTaxBracket($this->nID, 3370);
     }
 
     /**

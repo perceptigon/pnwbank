@@ -303,7 +303,7 @@ class Spies
                         $message .= "[b]Sabotage Nukes[/b] on [link=https://politicsandwar.com/nation/id=" . $assignment->defender->nID . "]" . $assignment->defender->nName . "[/link]\n";
                         break;
                 }
-                $message .= "[link=https://bkpw.net/bkn/defense/spies/results/submit?nID=$attacker->nID&aID=$assignment->id]Submit Results[/link], Assignment ID: $assignment->id\n\n";
+                $message .= "[link=https://camelotpnw.tech/defense/spies/results/submit?nID=$attacker->nID&aID=$assignment->id]Submit Results[/link], Assignment ID: $assignment->id\n\n";
                 $assignment->sent = true;
                 $assignment->save();
             }
