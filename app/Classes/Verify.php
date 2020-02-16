@@ -522,7 +522,7 @@ class Verify
      */
     private function inBK() : bool
     {
-        if ($this->nation->aID != 877)
+        if ($this->nation->aID != 4937)
         {
             array_push($this->errors, "You must be in BK in order to be eligible");
             $this->eligible = false;

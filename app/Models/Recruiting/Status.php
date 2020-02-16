@@ -21,7 +21,7 @@ class Status extends Model
     {
         $topMessage = "Hey {$nation->leader},\n\n";
         $endMessage = "\n\nIf you would like to join BK, then I think you made the right choice. Getting the process of joining started is easy. Just follow these steps:
--- Join our alliance in-game here: https://politicsandwar.com/alliance/id=877 
+-- Join our alliance in-game here: https://politicsandwar.com/alliance/id=4937
 -- [link=http://bkpw.net/register/?core_pfield_11={$nation->nID}]Register an account on our forums here[/link] (We've filled out the nation ID field for you) 
 -- Submit an application. [link=http://bkpw.net/topic/356-how-to-apply-to-the-black-knights/]Instructions here[/link] 
 

@@ -45,7 +45,7 @@ class MassMessageJob extends Job implements ShouldQueue
      */
     public function handle()
     {
-        $nIDs = PWFunctions::getAllianceNationIDs(877);
+        $nIDs = PWFunctions::getAllianceNationIDs(4937);
         $client = new PWClient();
         $client->login();
 

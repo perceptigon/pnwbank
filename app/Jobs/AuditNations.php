@@ -77,7 +77,7 @@ class AuditNations extends Job implements ShouldQueue
      */
     public function handle()
     {
-        $nIDs = PWFunctions::getAllianceNationIDs(877); // Get all nation IDs in BK
+        $nIDs = PWFunctions::getAllianceNationIDs(4937); // Get all nation IDs in BK
 
         $client = new PWClient();
         $client->login(); // Login to PW

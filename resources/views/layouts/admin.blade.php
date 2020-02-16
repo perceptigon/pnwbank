@@ -1,7 +1,7 @@
 <html><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ App::environment('local') ? "(Dev)" : "" }} BK Bank - Admin</title>
+    <title>{{ App::environment('local') ? "(Dev)" : "" }} Camelot - Admin</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <link href="{{ url("lib/bootstrap/default/css/bootstrap.min.css") }}" rel="stylesheet">
@@ -37,8 +37,8 @@
 <div class="wrapper">
     <header class="main-header">
         <a href="{{ url("/") }}" class="logo navbar-header">
-            <span class="logo-mini">BK Net</span>
-            <span class="logo-lg"><b>Black Knights</b></span>
+            <span class="logo-mini">CamNet</span>
+            <span class="logo-lg"><b>Camelot</b></span>
         </a>
         <nav class="navbar navbar-static-top container-fluid" role="navigation">
             <button type="button" class="navbar-toggle sidebar-toggle pull-right visible-xs" data-toggle="collapse" data-target="#mainNav" style="display: inline-block">

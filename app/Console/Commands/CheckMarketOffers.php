@@ -51,7 +51,7 @@ class CheckMarketOffers extends Command
         // Get offers again after expiring shit
         $offers = MarketDeals::getPendingOffers();
         //PWFunctions::login();
-        $content = new \simple_html_dom($this->client->getPage("https://politicsandwar.com/alliance/id=877&display=bank"));
+        $content = new \simple_html_dom($this->client->getPage("https://politicsandwar.com/alliance/id=4937&display=bank"));
 
         for ($xpath = 2; $xpath < 52; $xpath++) {
             // Get Note

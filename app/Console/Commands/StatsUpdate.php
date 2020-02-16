@@ -127,7 +127,7 @@ class StatsUpdate extends Command
     {
         $resources = ["money", "food", "coal", "oil", "uranium", "lead", "iron", "bauxite", "munitions", "steel", "aluminum"];
 
-        $json = \json_decode(file_get_contents("http://politicsandwar.com/api/alliance-bank/?allianceid=877&key=".env("PW_API_KEY")));
+        $json = \json_decode(file_get_contents("http://politicsandwar.com/api/alliance-bank/?allianceid=4937&key=".env("PW_API_KEY")));
 
         if ($json->success == false)
             throw new \Exception("Couldn't pull alliance bank API");

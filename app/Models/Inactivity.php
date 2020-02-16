@@ -88,7 +88,7 @@ class Inactivity extends Model
                 continue;
             }
 
-            if ($nation->aID != 877) // Nation is not in BK
+            if ($nation->aID != 4937) // Nation is not in BK
             {
                 $this->isInactive = false;
                 $this->save();

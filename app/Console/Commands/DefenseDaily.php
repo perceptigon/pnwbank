@@ -47,7 +47,7 @@ class DefenseDaily extends Command
     protected function updateNations()
     {
         // Get all nation IDs in BK
-        $nIDs = PWFunctions::getAllianceNationIDs(877);
+        $nIDs = PWFunctions::getAllianceNationIDs(4937);
 
         // Set all inBK's in the nations table to false
         DefenseNations::where("inBK", 1)->update(["inBK" => 0]);

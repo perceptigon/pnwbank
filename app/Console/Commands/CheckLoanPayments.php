@@ -59,7 +59,7 @@ class CheckLoanPayments extends Command
         $loans = Loans::getActiveLoans();
         // We're gonna do deposit requests in here until I'm not lazy.... which will be a while lul
         $deposits = Deposits::getActiveDeposits();
-        $content = new \simple_html_dom($this->client->getPage("https://politicsandwar.com/alliance/id=877&display=bank"));
+        $content = new \simple_html_dom($this->client->getPage("https://politicsandwar.com/alliance/id=4937&display=bank"));
         for ($xpath = 2; $xpath < 52; $xpath++) {
             // Get Note
             foreach ($content->find('//*[@id="scrollme"]/table/tbody/tr['.$xpath.']/td[2]/img') as $x) {

@@ -45,7 +45,7 @@ class TaxCollect extends Command
             "maximum" => 200,
             "minimum" => 0,
             "search" => "Go",
-        ], "https://politicsandwar.com/alliance/id=877&display=banktaxes", true));
+        ], "https://politicsandwar.com/alliance/id=4937&display=banktaxes", true));
 
         // Add two hours to get two hours behind PW. You should not have to change this for daylight savings.
         $time = time() + 7200;

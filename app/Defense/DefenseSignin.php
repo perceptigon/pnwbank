@@ -68,7 +68,7 @@ class DefenseSignin extends Model
         // Get defense profile
         $profile = DefenseProfiles::getProfile($request->nID);
 
-        if ($nation->aID != 877)
+        if ($nation->aID != 4937)
             throw new \Exception("You are not in BK");
         if ($nation->alliancePosition < 2)
             throw new \Exception("Applicants do not need to sign in");

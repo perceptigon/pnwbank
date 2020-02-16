@@ -172,7 +172,7 @@ class PWClient
             "nationperm" => $leader,
             "level" => $level,
             "permsubmit" => "Go",
-        ], "https://politicsandwar.com/alliance/id=877", true);
+        ], "https://politicsandwar.com/alliance/id=4937", true);
     }
 
     /**
@@ -214,7 +214,7 @@ class PWClient
             "bracket_id" => $taxBracketID,
             "change_member_bracket" => "Update Nation's Bracket",
             "token" => $token,
-        ], "https://politicsandwar.com/alliance/id=877&display=taxes", true);
+        ], "https://politicsandwar.com/alliance/id=4937&display=taxes", true);
     }
 
     /**
@@ -225,7 +225,7 @@ class PWClient
      */
     public function getTaxToken() : string
     {
-        $html = new HtmlPageCrawler($this->getPage("https://politicsandwar.com/alliance/id=877&display=taxes"));
+        $html = new HtmlPageCrawler($this->getPage("https://politicsandwar.com/alliance/id=4937&display=taxes"));
 
         $token = $html->filter("input[name=token]")->getAttribute("value");
 

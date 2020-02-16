@@ -144,7 +144,7 @@ class SignInReset extends Command
      */
     protected function callAPI() : array
     {
-        $json = \json_decode(file_get_contents("http://politicsandwar.com/api/alliance-members/?allianceid=877&key=".env("PW_API_KEY")));
+        $json = \json_decode(file_get_contents("http://politicsandwar.com/api/alliance-members/?allianceid=4937&key=".env("PW_API_KEY")));
 
         if ($json->success == false)
             throw new \Exception($json->general_message);
