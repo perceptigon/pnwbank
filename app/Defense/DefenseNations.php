@@ -28,7 +28,7 @@ class DefenseNations extends Model
     }
 
     /**
-     * Get all nations in BK.
+     * Get all nations in Cam.
      *
      * @return Collection
      */
