@@ -109,7 +109,7 @@
                 @endif
                      |
                 <a href="https://forum.politicsandwar.com/" target="_blank">Forums</a> |
-                <a href="https://blazeti.me/ayylmao2/" target="_blank">ayy lmao</a>
+                <a href="https://blazeti.me/ayylmao2/" target="_blank">ayy lmao</a> |
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Admin</a>
             </nav>
 
