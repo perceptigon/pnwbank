@@ -1,0 +1,1 @@
+{{ \App\Classes\Output::genAlert(["You have no nation ID associated with your account. Please contact an administrator as soon as possible"], "danger", "Error!") }}

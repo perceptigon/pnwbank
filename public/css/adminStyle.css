@@ -1,0 +1,346 @@
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+}
+
+body {
+    padding-top: 50px;
+    background: #ecf0f5;
+}
+
+.infoBox {
+    display: inline-block;
+    min-height: 90px;
+    background: white !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-bottom: 15px;
+    width: 100%
+}
+
+.infoBoxImage {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    display: block;
+    float: left;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    font-size: 45px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+}
+
+.infoBoxImage .fa {
+    margin-top: 22px;
+}
+
+.infoBoxContent {
+    padding: 5px 10px;
+    margin-left: 90px;
+}
+
+.infoBoxText {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.infoBoxNumber {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    text-overflow: ellipsis;
+}
+
+.sidebarNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #222d32;
+}
+
+.sidebarNav li {
+    width: 100%;
+    border-left: 3px solid #222d32;
+    box-sizing: border-box;
+}
+
+.sidebarNav li:hover, .active {
+    background: #1e282c;
+    border-color: #3c8dbc !important;
+}
+
+.sidebarNav a {
+    color: #b8c7ce;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.sidebarNav i {
+    margin-right: 5px;
+    width: 20px;
+}
+
+.sidebarFooter {
+    font-style: italic;
+    color: #616161;
+    font-size: 10px;
+    bottom: 5px;
+    position: absolute;
+}
+
+.sidebarFooter span {
+    display: block;
+}
+
+.sidebar {
+    background: #222d32;
+    color: white;
+    padding: 0;
+}
+
+.sidebarMenuHeader {
+    background: #1a2226;
+    padding: 20px 20px 10px 20px;
+    color: #4b646f;
+}
+
+.greenCircle {
+    color: #1B5E20;
+    margin-right: 5px;
+}
+
+.userLevel {
+    font-size: 12px;
+}
+
+.username {
+    margin: 5px;
+}
+
+.userInfo {
+    padding: 5px 15px;
+    text-transform: capitalize;
+}
+
+.green {
+    background: #008d4c;
+}
+
+.aqua {
+    background: #00a7d0;
+}
+
+.red {
+    background: #d33724;
+}
+
+.orange {
+    background: #ff7701;
+}
+
+header {
+    background: #357ca5 !important;
+    color: white;
+}
+
+.navbar-default {
+    border-color: #357ca5;
+}
+
+.mainNav a {
+    color: white !important;
+}
+
+.mainNav a:hover {
+    background: #2c6484 !important;
+}
+
+.progress {
+    border-radius: 0;
+    background: rgba(0,0,0,0.2);
+    margin: 5px -10px 5px -10px;
+    height: 2px;
+}
+
+.progress-bar {
+    background: #357ca5;
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.icon-bar {
+    background-color: white !important;
+}
+
+.navbar-toggle:hover {
+    background: none !important;
+}
+
+.formContainer {
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px 25px;
+}
+
+.fa-pencil-square {
+    font-size: 36px;
+    color: #424242;
+}
+
+.sidebarNav .badge {
+    background: #3c8dbc;
+}
+
+.dropdown-menu {
+    background: #357ca5;
+}
+
+.navbar-default .navbar-nav > .open > a {
+    background: #2c6484 !important;
+}
+
+.xsForm {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.late {
+    color: red;
+}
+
+@media (max-width: 992px) {
+    .xsForm {
+        width: 100%;
+    }
+
+    .sidebar {
+        display: none;
+        width: 200px;
+    }
+
+    .sidebarBurger {
+        display: block;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .burgerOpen {
+        padding-left: 262px;
+        transition: 0.2s ease;
+        overflow-x: hidden;
+    }
+
+    .burgerChartOpen {
+        width: 100%;
+    }
+
+    .nav-icon {
+        width: 45px;
+        height: 35px;
+        position: relative;
+        margin: 8px 10px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+    }
+    .nav-icon span {
+        display: block;
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: #414242;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .nav-icon span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .nav-icon span:nth-child(2) {
+        top: 12px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .nav-icon span:nth-child(3) {
+        top: 24px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .nav-icon.open span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: -5px;
+        left: 12px;
+    }
+
+    .nav-icon.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .nav-icon.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 27px;
+        left: 12px;
+    }
+
+    .formContainer {
+        padding: 0;
+        width: 100%;
+    }
+}
