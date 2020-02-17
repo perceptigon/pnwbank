@@ -74,6 +74,7 @@
 
                             <ul class="dropdown-menu" role="menu">                           
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                <li><a href="{{ url('/user/dashboard') }}"><i class="fa fa-btn fa-sign-out"></i>Dashboard</a></li>
                             </ul>
                         </li>
                     @endif
@@ -108,7 +109,9 @@
                 @endif
                      |
                 <a href="https://forum.politicsandwar.com/" target="_blank">Forums</a> |
-                <a href="https://blazeti.me/ayylmao2/" target="_blank">ayy lmao</a>
+                <a href="https://blazeti.me/ayylmao2/" target="_blank">ayy lmao</a> |
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Admin</a> |
+                <a href="https://www.youtube.com/watch?v=Nfrk2UdEOcQ" target="_blank">Phpmyadmin</a>
             </nav>
 
             <script src="{{ url("/lib/jquery/jquery.min.js") }}"></script>
