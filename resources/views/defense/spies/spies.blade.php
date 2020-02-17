@@ -24,7 +24,7 @@
     <section class="content-header">
         <h1>Spy Wizard</h1>
         <br>
-        <p>Welcome to the BK Spy Wizard. To begin, enter the alliance IDs of both the attacking and defending alliance(s). Once you are done, simply click either "continue to attackers" or "continue to defenders", depending on how you want to assign targets. The first time you click this it will load in all the nations, and depending on the size of the alliance, <strong>this can take up to several minutes</strong>, so don't worry.</p>
+        <p>Welcome to the Camelots Spy Wizard. To begin, enter the alliance IDs of both the attacking and defending alliance(s). Once you are done, simply click either "continue to attackers" or "continue to defenders", depending on how you want to assign targets. The first time you click this it will load in all the nations, and depending on the size of the alliance, <strong>this can take up to several minutes</strong>, so don't worry.</p>
         <div>
             @if($active != false)
                 <h3><strong>Status: </strong><span style="color:red">Active</span></h3>
