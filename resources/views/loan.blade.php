@@ -53,7 +53,7 @@
 		    		<li>Everyday you are late, you may be charged a fee of 25% of the total debt</li>
 		    		<li>After debt payment, you will not be allowed to take a loan one month and future interest rates will be at least double.</li>
 		    		<li>Potential to be raided</li>
-		    		<li>Potential to be expelled from the Camelot</li>
+		    		<li>Potential to be expelled from Camelot</li>
 		    	</ul>
 		    </li>
 	    </ul>
