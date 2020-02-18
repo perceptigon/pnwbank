@@ -203,7 +203,7 @@ class UserController extends Controller
         // Now call to create the deposit request
         $account->createDepositRequest();
 
-        $this->output->addSuccess("Deposit request added successfully. Please check your inbox in-game for instructions");
+        $this->output->addSuccess("Deposit request added successfully. Please check the top left corner of this page");
     }
 
     /**
