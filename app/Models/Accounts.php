@@ -254,7 +254,7 @@ class Accounts extends Model
             "accountID" => $this->id,
             "code" => $code,
         ]);
-
+        echo"Please use the following code:$code";
         dispatch(new CreateDepositRequest($deposit));
     }
 
