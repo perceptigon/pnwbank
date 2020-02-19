@@ -1436,10 +1436,10 @@ class Verify
      */
     public function checkIfBlack() : bool
     {
-        if ($this->nation->color != "black")
+        if ($this->nation->color != "maroon")
         {
             $this->eligible = false;
-            array_push($this->errors, "Your color must be Black in order to be eligible");
+            array_push($this->errors, "Your color must be maroon in order to be eligible");
 
             return false;
         }
