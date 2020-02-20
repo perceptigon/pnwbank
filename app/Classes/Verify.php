@@ -524,7 +524,7 @@ class Verify
     {
         if ($this->nation->aID != 4937)
         {
-            array_push($this->errors, "You must be in BK in order to be eligible");
+            array_push($this->errors, "You must be in Camelot in order to be eligible");
             $this->eligible = false;
 
             return false;
