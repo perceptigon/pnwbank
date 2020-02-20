@@ -409,7 +409,7 @@ class Verify
             $this->checkIfPendingEGRGrant();
             $this->checkIfBlack();
             $this->checkGasRefineries();
-            $this->cityAmount(15);
+            $this->cityAmount(2);
         }
 
         if ($this->eligible)
@@ -473,7 +473,7 @@ class Verify
             $this->checkPendingOil();
             $this->checkIfBlack();
             $this->checkGasRefineries();
-            $this->cityAmount(10);
+            $this->cityAmount(2);
         }
 
         if ($this->eligible)

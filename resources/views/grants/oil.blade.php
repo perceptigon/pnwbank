@@ -32,7 +32,7 @@
             <li>
                 In order to qualify for the grant you must fulfill the following requirements:
                 <ul>
-                    <li>Have at least 15 cities.</li>
+                    <li>Have at least 2 cities.</li>
                     <li>Have maximum gasoline refineries.</li>
                 </ul>
             </li>
