@@ -524,7 +524,7 @@ class Verify
     {
         if ($this->nation->aID != 4937)
         {
-            array_push($this->errors, "You must be in BK in order to be eligible");
+            array_push($this->errors, "You must be in Camelot in order to be eligible");
             $this->eligible = false;
 
             return false;
@@ -1436,10 +1436,10 @@ class Verify
      */
     public function checkIfBlack() : bool
     {
-        if ($this->nation->color != "black")
+        if ($this->nation->color != "Maroon")
         {
             $this->eligible = false;
-            array_push($this->errors, "Your color must be Black in order to be eligible");
+            array_push($this->errors, "Your color must be Maroon in order to be eligible");
 
             return false;
         }
