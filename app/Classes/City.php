@@ -6,7 +6,7 @@ namespace App\Classes;
 class City
 {
     public function __construct($cID) {
-        $jsondata = file_get_contents("https://politicsandwar.com/api/city/id=$cID&key=".env('PW_API_KEY'));
+        $jsondata = file_get_contents("https://politicsandwar.com/api/city/id=$cID&key=".env("PW_API_KEY")");
         $json = json_decode($jsondata, true);
         $this->name = $json["name"];
         $this->founded = $json["founded"];
