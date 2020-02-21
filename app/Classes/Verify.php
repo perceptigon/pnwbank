@@ -1439,7 +1439,7 @@ class Verify
         foreach ($this->nation->cityIDs as $cityID)
         {
             $city = new City($cityID);
-            if ($city->oilRefinery != 5)
+            if ($city->oilWell > 1)
             {
                 array_push($this->errors, "You must have max oil refineries.");
                 return false;
