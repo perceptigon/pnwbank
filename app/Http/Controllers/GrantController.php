@@ -192,7 +192,6 @@ class GrantController extends Controller
             $verify = new Verify($nation);
 
             $forumProfile = new \App\Classes\ForumProfile($nation->nID);
-            $forumProfile->getForumProfile();
 
             if ($verify->requestEGRGrant($forumProfile))
             {
@@ -254,7 +253,6 @@ class GrantController extends Controller
             $verify = new Verify($nation);
 
             $forumProfile = new \App\Classes\ForumProfile($nation->nID);
-            $forumProfile->getForumProfile();
 
             if ($verify->requestirondomeGrant($forumProfile))
             {
@@ -315,7 +313,6 @@ class GrantController extends Controller
             $verify = new Verify($nation);
 
             $forumProfile = new \App\Classes\ForumProfile($nation->nID);
-            $forumProfile->getForumProfile();
 
             if ($verify->requestcceGrant($forumProfile))
             {
@@ -376,7 +373,6 @@ class GrantController extends Controller
             $verify = new Verify($nation);
 
             $forumProfile = new \App\Classes\ForumProfile($nation->nID);
-            $forumProfile->getForumProfile();
 
             if ($verify->requestnrfGrant($forumProfile))
             {
@@ -437,7 +433,6 @@ class GrantController extends Controller
             $verify = new Verify($nation);
 
             $forumProfile = new \App\Classes\ForumProfile($nation->nID);
-            $forumProfile->getForumProfile();
 
             if ($verify->requestmlpGrant($forumProfile))
             {
@@ -498,7 +493,6 @@ class GrantController extends Controller
             $verify = new Verify($nation);
 
             $forumProfile = new \App\Classes\ForumProfile($nation->nID);
-            $forumProfile->getForumProfile();
 
             if ($verify->requestpbGrant($forumProfile))
             {
@@ -570,7 +564,6 @@ class GrantController extends Controller
             $verify = new Verify($nation);
 
             $forumProfile = new \App\Classes\ForumProfile($nation->nID);
-            $forumProfile->getForumProfile();
 
             if ($verify->requestCIAGrant($forumProfile))
             {
@@ -638,7 +631,6 @@ class GrantController extends Controller
             $nation = new \App\Classes\Nation($request->nID);
 
             $forumProfile = new \App\Classes\ForumProfile($nation->nID);
-            $forumProfile->getForumProfile();
 
             $verify = new Verify($nation);
 
@@ -757,7 +749,6 @@ class GrantController extends Controller
             $nation = new \App\Classes\Nation($request->nID);
 
             $forumProfile = new \App\Classes\ForumProfile($nation->nID);
-            $forumProfile->getForumProfile();
 
             $verify = new Verify($nation);
 

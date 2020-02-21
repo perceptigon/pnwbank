@@ -154,8 +154,6 @@ class Verify
             $this->checkIfCityGrantPending();
             $this->checkLastCityGrant();
             $this->forumProfile = new ForumProfile($this->nation->nID);
-            $this->forumProfile->getForumProfile();
-            $this->isKnight();
 
             // bypass this check if it is grant 5 or below
             if (!($this->cityGrantNum <= 10))
@@ -195,8 +193,6 @@ class Verify
             $this->checkLoanAmount();
             $this->lastLoanCheck();
             $this->forumProfile = new ForumProfile($this->nation->nID);
-            $this->forumProfile->getForumProfile();
-            $this->isKnight();
             $this->checkIfBlack();
         }
 
@@ -218,7 +214,6 @@ class Verify
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
             $this->forumProfile = new ForumProfile($this->nation->nID);
-            $this->forumProfile->getForumProfile();
             $this->notStudent();
             $this->checkIfPendingEntAid();
             $this->checkIfGottenEntrance();
@@ -241,7 +236,6 @@ class Verify
 
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
-            $this->isKnight();
             $this->checkIfHasCIA();
             $this->checkCityTimers();
             $this->checkIfGottenIDGrant();
@@ -267,7 +261,6 @@ class Verify
 
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
-            $this->isKnight();
             $this->checkIfHasirondome();
             $this->checkIfnocia();
             $this->checkCityTimers();
@@ -293,7 +286,6 @@ class Verify
 
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
-            $this->isKnight();
             $this->checkIfHasmlp();
             $this->checkIfnocia();
             $this->checkIfnoirondome();
@@ -320,7 +312,6 @@ class Verify
 
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
-            $this->isKnight();
             $this->checkIfHastheNRF();
             $this->checkIfnocia();
             $this->checkIfnoirondome();
@@ -350,7 +341,6 @@ class Verify
 
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
-            $this->isKnight();
             $this->checkIfHaspb();
             $this->checkIfnocia();
             $this->checkIfnoirondome();
@@ -378,7 +368,6 @@ class Verify
 
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
-            $this->isKnight();
             $this->checkIfHascce();
             $this->checkIfnocia();
             $this->checkIfnoirondome();
@@ -402,7 +391,6 @@ class Verify
 
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
-            $this->isKnight();
             $this->checkIfHasEGR();
             $this->checkCityTimers();
             $this->checkIfGottenEGRGrant();
@@ -424,7 +412,6 @@ class Verify
 
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
-            $this->isKnight();
             $this->checkIfHasNRF();
             $this->checkIfPendingNukeGrants();
             $this->checkIfBlack();
