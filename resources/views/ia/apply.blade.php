@@ -7,8 +7,8 @@
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-            <h1 class="text-center">Apply to BK</h1>
-            <p>Please fill out the following information. It will automatically gather some information from your nation, and will then post your application to the forums, where you can respond to your interview questions that will be asked by our IA staff.</p><br>
+            <h1 class="text-center">Apply to Camelot</h1>
+            <p>Please visit our Discord server at 'https://discord.gg/9eNvpHZ' this module isn't available yet this</p><br>
             <form method="post" action="apply">
                 <fieldset>
                     <div class="form-group label-floating">
