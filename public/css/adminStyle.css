@@ -14,7 +14,7 @@
 
 body {
     padding-top: 50px;
-    background: #ecf0f5;
+    background: #353C51;
 }
 
 .infoBox {
@@ -191,7 +191,7 @@ header {
 }
 
 .icon-bar {
-    background-color: black !important;
+    background-color: white !important;
 }
 
 .navbar-toggle:hover {
