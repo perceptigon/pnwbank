@@ -2,13 +2,13 @@
 
 @section('content')
 
-    <p style="text-align:center;padding-top:10px;"><img src="{{ url("/images/tibernet_logo.png") }}" alt="Tibernet Logo" style="width:400px;height:150px;"><img src="{{ url("/images/flag.png") }}" alt="BK Flag" style="width:300px;height:150px;"></p>
+    <p style="text-align:center;padding-top:10px;"><img src="{{ url("/images/tibernet_logo.png") }}" alt="Tibernet Logo" style="width:400px;height:150px;"><img src="{{ url("https://politicsandwar.com/uploads/abba90655c97307b46314e76e68da98008e2ff2c641.png") }}" alt="Cam Flag" style="width:300px;height:150px;"></p>
 
     <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-            <h1 class="text-center">Apply to BK</h1>
-            <p>Please fill out the following information. It will automatically gather some information from your nation, and will then post your application to the forums, where you can respond to your interview questions that will be asked by our IA staff.</p><br>
+            <h1 class="text-center">Apply to Camelot</h1>
+            <p>Please visit our Discord server at 'https://discord.gg/9eNvpHZ' this module isn't available yet</p><br>
             <form method="post" action="apply">
                 <fieldset>
                     <div class="form-group label-floating">
@@ -30,7 +30,7 @@
                     <br>
                     <br>
                     <div class="form-group label-floating">
-                        <label class="control-label" for="skills">What skills can you offer BK?</label>
+                        <label class="control-label" for="skills">What skills can you offer Cam?</label>
                         <textarea class="form-control" id="skills" name="skills" required></textarea>
                     </div>
                     <label for="MMR">We are a military alliance, which means you will be required to stockpile a warchest (stockpile of resources and money) which will cut into your growth, are you okay with this?</label>
