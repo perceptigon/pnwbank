@@ -8,7 +8,7 @@
         <div class="col-md-3"></div>
         <div class="col-md-6">
             <h1 class="text-center">Apply to Camelot</h1>
-            <p>Please visit our Discord server at 'https://discord.gg/9eNvpHZ' this module isn't available yet this</p><br>
+            <p>Please visit our Discord server at 'https://discord.gg/9eNvpHZ' this module isn't available yet</p><br>
             <form method="post" action="apply">
                 <fieldset>
                     <div class="form-group label-floating">
@@ -30,7 +30,7 @@
                     <br>
                     <br>
                     <div class="form-group label-floating">
-                        <label class="control-label" for="skills">What skills can you offer BK?</label>
+                        <label class="control-label" for="skills">What skills can you offer Cam?</label>
                         <textarea class="form-control" id="skills" name="skills" required></textarea>
                     </div>
                     <label for="MMR">We are a military alliance, which means you will be required to stockpile a warchest (stockpile of resources and money) which will cut into your growth, are you okay with this?</label>
