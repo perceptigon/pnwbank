@@ -12,6 +12,7 @@ use App\Models\Grants\NukeGrants;
 use App\Models\Profile;
 use Illuminate\Http\Request;
 use App\Models\Grants\EntranceAid;
+ use App\Models\Grants\BauxiteGrant;
 
 /**
  * Class Verify.
@@ -274,6 +275,29 @@ class Verify
 
         return false;
     }
+
+        /**
+         * Verifies Bauxite requests.
+         *
+         * @param ForumProfile $forumProfile
+         * @return bool
+         */
+        public function requestbauxiteGrant(ForumProfile $forumProfile) : bool
+        {
+            $this->forumProfile = $forumProfile;
+
+            if ($this->nation->exists && $this->inBK() && $this->notApplicant())
+            {
+
+                $this->checkIfBlack();
+            }
+
+            if ($this->eligible)
+                return true;
+
+            return false;
+        }
+
     /**
      * Verifies mlp requests.
      *
@@ -452,6 +476,21 @@ class Verify
 
         return false;
     }
+
+    public function reqBauxite()
+    {
+        if ($this->nation->exists && $this->inBK() && $this->notApplicant())
+        {
+            $this->checkPendingbauxite();
+            $this->checkIfBlack();
+        }
+
+        if ($this->eligible)
+            return true;
+
+        return false;
+    }
+
 
     public function reqOil()
     {
@@ -866,6 +905,20 @@ class Verify
         {
             $this->eligible = false;
             array_push($this->errors, "You've already gotten entrance aid");
+
+            return false;
+        }
+
+        return true;
+    }
+
+    private function checkPendingBauxite() : bool
+    {
+        if (Food::checkPendingReq($this->nation->nID))
+        {
+            // If they do have a pending entrance aid request
+            $this->eligible = false;
+            array_push($this->errors, "You already have a pending aid request");
 
             return false;
         }

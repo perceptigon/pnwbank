@@ -25,11 +25,17 @@ Route::post('/grants/city', 'GrantController@reqCity');
 Route::get("/contact", "HomeController@contact");
 Route::post("/contact", "HomeController@contactPost");
 
+Route::get("/grants/bauxite", "GrantController@bauxite");
+Route::post("/grants/bauxite", "GrantController@reqBauxite");
+
 Route::get("/grants/entrance", "GrantController@entrance");
 Route::post("/grants/entrance", "GrantController@reqEntrance");
 
 Route::get("/grants/oil", "GrantController@oil");
 Route::post("/grants/oil", "GrantController@reqOil");
+
+Route::get("/admin/bauxite", "AdminController@bauxite");
+Route::post("/admin/bauxite", "AdminController@reqBauxite");
 
 Route::get('/grants/id', 'GrantController@idGrant');
 Route::post('/grants/id', 'GrantController@reqIDGrant');

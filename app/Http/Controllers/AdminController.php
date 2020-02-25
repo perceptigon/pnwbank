@@ -666,6 +666,49 @@ class AdminController extends Controller
 
         return self::oil();
     }
+    /**Bauxite Starts Here :) **/
+    public function bauxite()
+    {
+        if (Gate::denies("grants"))
+            return view("admin.unauthorized", ["page" => "bauxite"]);
+
+        $pendGrants = \App\Models\Grants\BauxiteGrant::getPendReqs();
+
+        return view("admin.bauxite", [
+            "page" => "bauxite",
+            "pendGrants" => $pendGrants,
+        ])
+            ->with('output', $this->output);
+    }
+
+    public function bauxitePost(Request $request)
+    {
+        if (Gate::denies("grants"))
+            return view("admin.unauthorized", ["page" => "bauxite"]);
+
+        try
+        {
+            if (isset($request->approveGrant))
+            {
+                \App\Models\Grants\BauxiteGrant::acceptGrant($request->gID);
+                $this->output->addSuccess("Grant Approved");
+            }
+            elseif (isset($request->denyGrant))
+            {
+                \App\Models\Grants\BauxiteGrant::denyGrant($request->gID);
+            }
+            else
+                throw new \Exception("Couldn't determine function");
+        }
+        catch (\Exception $e)
+        {
+            $this->output->addError($e->getMessage());
+        }
+
+        return self::bauxite();
+    }
+
+    /** Bauxite Ends Here **/
 
     public function nukes()
     {

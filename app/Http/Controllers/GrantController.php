@@ -400,6 +400,63 @@ class GrantController extends Controller
 
         return self::nrfGrant();
     }
+      public function bauxite()
+        {
+            $system = \App\Models\Settings::where("sKey", "bauxiteSystem")->firstOrFail();
+
+            return view("grants/bauxite", [
+                'system' => $system->value,
+            ])
+                ->with('output', $this->output);
+        }
+
+        public function reqBauxite(Request $request)
+        {
+            $settings = \App\Models\Settings::where("sKey", "bauxiteSystem")->firstOrFail();
+
+            try
+            {
+                if ($settings === 0)
+                {
+                    echo "The Bauxite Grant system is turned off"; // This should never happen, however if someone sends a POST request we can kill it here
+                    return false;
+                }
+
+                $nation = new \App\Classes\Nation($request->nID);
+
+                $verify = new Verify($nation);
+
+                if ($verify->reqBauxite())
+                {
+                    $verify->profile->pendingBauxiteGrant = 1;
+                    $verify->profile->save();
+
+                    $bauxite = new \App\Models\Grants\BauxiteGrant();
+                    $bauxite->nID = $nation->nID;
+                    $bauxite->leader = $nation->leader;
+                    $bauxite->nationName = $nation->nationName;
+                    $bauxite->isPending = true;
+                    $bauxite->isSent = false;
+                    $bauxite->save();
+
+                    \App\Models\Log::createLog("Bauxite", "Requested $verify->threshold ($nation->nID)");
+                    $this->output->addSuccess("Thanks, {$nation->leader}. Your request has been submitted. Please allow up to 24 hours for approval.");
+                }
+                else
+                {
+                    foreach ($verify->errors as $error)
+                        $this->output->addError($error);
+
+                    \App\Models\Log::createLog("Bauxite", "Not eligible for grant ($nation->nID)", $this->output->errors);
+                }
+            }
+            catch (\Exception $ex)
+            {
+                $this->output->addError($ex->getMessage());
+            }
+
+            return self::bauxite();
+        }
     /**
      * GET: /mlp.
      *
