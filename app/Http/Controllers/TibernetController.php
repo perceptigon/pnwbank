@@ -79,7 +79,7 @@ class TibernetController extends Controller
 	            <strong>Nation Link:</strong> <a href=\"https://politicsandwar.com/nation/id=$request->nation_ID\" rel=\"external nofollow\">https://politicsandwar.com/nation/id=$request->nation_ID</a><br>
 	            <strong>Previous alliances and Previous Positions:</strong> $request->prev_alliances<br>
 	            <strong>Have you done something to piss someone off in P&amp;W?:</strong> $request->pissed_off<br>
-                <strong>What skills can you offer BK?:</strong> $request->skills<br>
+                <strong>What skills can you offer Cam?:</strong> $request->skills<br>
 	            <strong>We are a military alliance, which means you will be required to stockpile a warchest (stockpile of resources and money) which will cut into your growth, are you okay with this?:</strong> $request->MMR
                 </p>";
 
