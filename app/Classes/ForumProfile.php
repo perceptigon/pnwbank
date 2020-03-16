@@ -72,7 +72,7 @@ class ForumProfile
     {
         try // We get the member ID by querying the profile fields table for the nation ID field
         {
-            $fields = \App\Forums\ForumFields::where("field_11", $this->nID)->firstOrFail();
+            $fields = \App\Forums\ForumFields::where("field_2", $this->nID)->firstOrFail();
         }
         catch (\Exception $ex) // If it throws an exception, then the field doesn't exist
         {
