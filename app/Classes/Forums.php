@@ -33,7 +33,7 @@ class Forums
         $this->apiKey = env("FORUM_API_KEY");
 
         $this->client = new Client([
-            "base_uri" => "https://bkpw.net/api/",
+            "base_uri" => "https://camelotpnw.tech/api/",
             "verify"   => false,
             "curl"     => [
                 CURLOPT_USERPWD => $this->apiKey,
