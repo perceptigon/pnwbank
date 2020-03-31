@@ -38,8 +38,8 @@ class SendVerifyMessage implements ShouldQueue
 
         $nation = new Nation($this->user->nID);
 
-        $message = "Hi $nation->leader, \n\n An account at the Camelot Bank has been created and this message is being sent to you to verify that it was actually you who created the account. In order to verify your account, click the link below. If you did not create this account, [b]DO NOT[/b] click the link and please contact a Government member right away.\n\n [link=".url("/verify/".$this->user->verifyToken)."]Click here to verify your account![/link]\nIf your token was not autofilled, your token is: ".$this->user->verifyToken;
+        $message = "Hi $nation->leader, \n\n An account at the The Rothschild Family Bank has been created and this message is being sent to you to verify that it was actually you who created the account. In order to verify your account, click the link below. If you did not create this account, [b]DO NOT[/b] click the link and please contact a Government member right away.\n\n [link=".url("/verify/".$this->user->verifyToken)."]Click here to verify your account![/link]\nIf your token was not autofilled, your token is: ".$this->user->verifyToken;
 
-        $client->sendMessage($nation->leader, "Camelot Bank Verification", $message);
+        $client->sendMessage($nation->leader, "The Rothschild Family Bank Verification", $message);
     }
 }

@@ -548,9 +548,9 @@ class Verify
      */
     private function inBK() : bool
     {
-        if ($this->nation->aID != 4937)
+        if ($this->nation->aID != 7399)
         {
-            array_push($this->errors, "You must be in Camelot in order to be eligible");
+            array_push($this->errors, "You must be in The Rothschild Family in order to be eligible");
             $this->eligible = false;
 
             return false;
@@ -744,7 +744,7 @@ class Verify
             if (! $defProfile->hasSignedIn)
             {
                 $this->eligible = false;
-                array_push($this->errors, "You haven't signed in to the Defense Module yet. Please <a href='https://camelotpnw.tech/signin' target='_blank'>CLICK HERE</a> to complete your defense sign in. Once finished, come back here and make another request.");
+                array_push($this->errors, "You haven't signed in to the Defense Module yet. Please <a href='http://bank.blackbird.im/signin' target='_blank'>CLICK HERE</a> to complete your defense sign in. Once finished, come back here and make another request.");
 
                 return false;
             }
@@ -756,7 +756,7 @@ class Verify
             if ($warchest->mmrScore < $requirement)
             {
                 $this->eligible = false;
-                array_push($this->errors, "Sorry, you don't meet the required MMR score. <a href='https://camelotpnw.tech/defense/dashboard' target='_blank'>Click here</a> to see your MMR score.");
+                array_push($this->errors, "Sorry, you don't meet the required MMR score. <a href='http://bank.blackbird.im/defense/dashboard' target='_blank'>Click here</a> to see your MMR score.");
 
                 return false;
             }
@@ -766,7 +766,7 @@ class Verify
         catch (\Exception $ex)
         {
             $this->eligible = false;
-            array_push($this->errors, "You haven't signed in to the Defense Module yet. Please <a href='https://camelotpnw.tech/signin' target='_blank'>CLICK HERE</a> to complete your defense sign in. Once finished, come back here and make another request.");
+            array_push($this->errors, "You haven't signed in to the Defense Module yet. Please <a href='http://bank.blackbird.im/signin' target='_blank'>CLICK HERE</a> to complete your defense sign in. Once finished, come back here and make another request.");
 
             return false;
         }

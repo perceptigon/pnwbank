@@ -222,7 +222,7 @@ class PWBank
         // Check if the postData is empty
         if (empty($this->postData))
             throw new \Exception("Post data empty. Run setupPOST() first");
-        $x = $this->client->postData($this->postData, "https://politicsandwar.com/alliance/id=4937&display=bank", true);
+        $x = $this->client->postData($this->postData, "https://politicsandwar.com/alliance/id=7399&display=bank", true);
 
         $this->verifySent($x);
     }
@@ -276,7 +276,7 @@ class PWBank
     public function checkIfFundsAvailable() : bool
     {
         $client = new Client();
-        $get = $client->get("http://politicsandwar.com/api/alliance-bank/?allianceid=4937&key=".env("PW_API_KEY"))->getBody();
+        $get = $client->get("http://politicsandwar.com/api/alliance-bank/?allianceid=7399&key=".env("PW_API_KEY"))->getBody();
         $json = \json_decode($get);
 
         if (! $json->success)

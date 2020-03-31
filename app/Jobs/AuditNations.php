@@ -77,7 +77,7 @@ class AuditNations extends Job implements ShouldQueue
      */
     public function handle()
     {
-        $nIDs = PWFunctions::getAllianceNationIDs(4937); // Get all nation IDs in BK
+        $nIDs = PWFunctions::getAllianceNationIDs(7399); // Get all nation IDs in BK
 
         $client = new PWClient();
         $client->login(); // Login to PW
@@ -451,7 +451,7 @@ class AuditNations extends Job implements ShouldQueue
     {
         if (! $this->mmr->checkIfSignedIn())
         {
-            $this->message .= "-- You haven't signed in yet. Please go [link=https://camelotpnw.tech/signin]here[/link] to sign in \n";
+            $this->message .= "-- You haven't signed in yet. Please go [link=http://bank.blackbird.im/signin]here[/link] to sign in \n";
         }
         else
         {

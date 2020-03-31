@@ -43,7 +43,7 @@ class MemberUpdate extends Command
     public function handle()
     {
         // TODO this shit
-        //$nIDs = PWFunctions::getAllianceNationIDs(4937);
+        //$nIDs = PWFunctions::getAllianceNationIDs(7399);
         $nIDs = [10472];
 
         // Get all the nation IDs in the table so we can delete the ones that are no longer in BK

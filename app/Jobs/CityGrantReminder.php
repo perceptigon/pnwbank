@@ -50,7 +50,7 @@ class CityGrantReminder extends Job implements ShouldQueue
     {
         try
         {
-            $nIDs = PWFunctions::getAllianceNationIDs(4937);
+            $nIDs = PWFunctions::getAllianceNationIDs(7399);
 
             $client = new PWClient();
             $client->login();

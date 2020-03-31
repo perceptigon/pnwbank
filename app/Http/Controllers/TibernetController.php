@@ -122,7 +122,7 @@ class TibernetController extends Controller
         switch ($status)
         {
             case "not_bk":
-                $this->output->addError("The nation you have entered is not a BK applicant. Please join BK in-game by going <a href=\"https://politicsandwar.com/alliance/id=4937\">here</a>, and try again.");
+                $this->output->addError("The nation you have entered is not a BK applicant. Please join BK in-game by going <a href=\"https://politicsandwar.com/alliance/id=7399\">here</a>, and try again.");
                 break;
             case "no_account":
                 $this->output->addError("There is no forum account associated with that nation id. Please make sure that the nation id you entered is correct, and make sure you have both created an account on the forums, and that you entered the proper nation id into your forum account's profile.");

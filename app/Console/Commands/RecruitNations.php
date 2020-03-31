@@ -112,7 +112,7 @@ class RecruitNations extends Command
      */
     protected function recruit(Nation $nation)
     {
-        $this->client->sendMessage($nation->leader, "Hi {$nation->leader}, check out Camelot!", Status::buildRecruitmentMessage($nation));
+        $this->client->sendMessage($nation->leader, "Hi {$nation->leader}, check out The Rothschild Family!", Status::buildRecruitmentMessage($nation));
 
         $this->updateNationsTable($nation);
     }

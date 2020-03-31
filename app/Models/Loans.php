@@ -75,7 +75,7 @@ class Loans extends Model
         $due->add(new \DateInterval("P".$loan->duration."D"));
         $due2 = date_format($due, "Y-m-d");
 
-        $message = "Hi ".$loan->leader.", \n \n Your loan of $".number_format($loan->amount)." has been approved and sent to you. It is due by midnight on ".date_format($due, "l, F j, Y").". Failure to do so will result in you being penalized. \n \n Your loan code is: ".$loan->code." \n To pay back the loan, deposit $".number_format($loan->amount)." into the BK bank with the code as the transaction note. The transaction note should ONLY include the code. The system checks for loans at :05 every hour. Please try not to deposit money at that time otherwise your deposit might not be counted. Please contact us if this happens to you.\n \n You can view info about your loan [link=https://camelotpnw.tech/lookup/".$loan->code."]here[/link].";
+        $message = "Hi ".$loan->leader.", \n \n Your loan of $".number_format($loan->amount)." has been approved and sent to you. It is due by midnight on ".date_format($due, "l, F j, Y").". Failure to do so will result in you being penalized. \n \n Your loan code is: ".$loan->code." \n To pay back the loan, deposit $".number_format($loan->amount)." into the BK bank with the code as the transaction note. The transaction note should ONLY include the code. The system checks for loans at :05 every hour. Please try not to deposit money at that time otherwise your deposit might not be counted. Please contact us if this happens to you.\n \n You can view info about your loan [link=http://bank.blackbird.im/lookup/".$loan->code."]here[/link].";
 
         $bank = new PWBank();
         $bank->recipient = $loan->nationName;
@@ -122,7 +122,7 @@ class Loans extends Model
         // Send message telling them their loan was denied
         $client = new PWClient();
         $client->login();
-        $message = "Hi ".$loan->leader.", \n \n Your loan of $".number_format($loan->amount)." has been denied. If you would like to know why, please [link=https://camelotpnw.tech/contact]contact us[/link].";
+        $message = "Hi ".$loan->leader.", \n \n Your loan of $".number_format($loan->amount)." has been denied. If you would like to know why, please [link=http://bank.blackbird.im/contact]contact us[/link].";
         $client->login($loan->leader, "Your loan has been denied", $message);
 
         \App\Models\Log::createLog("loan", "Denied Loan - ".$loan->code);

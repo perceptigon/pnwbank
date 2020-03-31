@@ -22,7 +22,7 @@ class Status extends Model
         $topMessage = "Hey {$nation->leader},\n\n";
         $endMessage = "\n\nI
 
-As always, if you have any questions about Camelot or the game, in general, let me know and I will get back to you as soon as possible.
+As always, if you have any questions about The Rothschild Family or the game, in general, let me know and I will get back to you as soon as possible.
 
 Thanks!";
 

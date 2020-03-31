@@ -75,7 +75,7 @@ class CheckInactiveNations extends Command
      */
     protected function getBKNations()
     {
-        $this->nations = PWFunctions::getAllianceNationIDs(4937);
+        $this->nations = PWFunctions::getAllianceNationIDs(7399);
     }
 
     /**

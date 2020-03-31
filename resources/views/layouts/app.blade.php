@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ App::environment('local') ? "(Dev)" : "" }} CamNet</title>
+    <title>{{ App::environment('local') ? "(Dev)" : "" }} Rothschild Family</title>
 
     <link rel="stylesheet" href="{{ url("/lib/bootstrap/paper/paper.min.css") }}">
     <link rel="stylesheet" href="{{ url("/css/default.css") }}">
@@ -16,7 +16,7 @@
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <a href="{{ url("/") }}" class="navbar-brand">CamNet {{ App::environment('local') ? "(Dev)" : "" }}</a>
+                <a href="{{ url("/") }}" class="navbar-brand">Rothschild Family {{ App::environment('local') ? "(Dev)" : "" }}</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>

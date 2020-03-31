@@ -150,7 +150,7 @@ class PWClient
      */
     public static function endMessage() : string
     {
-        return "This message was sent automatically. DO NOT respond to this message. If you need to contact us about something, please go [link=https://camelotpnw.tech/contact]here[/link].";
+        return "This message was sent automatically. DO NOT respond to this message. If you need to contact us about something, please go [link=http://bank.blackbird.im/contact]here[/link].";
     }
 
     /**
@@ -172,7 +172,7 @@ class PWClient
             "nationperm" => $leader,
             "level" => $level,
             "permsubmit" => "Go",
-        ], "https://politicsandwar.com/alliance/id=4937", true);
+        ], "https://politicsandwar.com/alliance/id=7399", true);
     }
 
     /**
@@ -214,7 +214,7 @@ class PWClient
             "bracket_id" => $taxBracketID,
             "change_member_bracket" => "Update Nation's Bracket",
             "token" => $token,
-        ], "https://politicsandwar.com/alliance/id=4937&display=taxes", true);
+        ], "https://politicsandwar.com/alliance/id=7399&display=taxes", true);
     }
 
     /**
@@ -225,7 +225,7 @@ class PWClient
      */
     public function getTaxToken() : string
     {
-        $html = new HtmlPageCrawler($this->getPage("https://politicsandwar.com/alliance/id=4937&display=taxes"));
+        $html = new HtmlPageCrawler($this->getPage("https://politicsandwar.com/alliance/id=7399&display=taxes"));
 
         $token = $html->filter("input[name=token]")->getAttribute("value");
 

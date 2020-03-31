@@ -25,7 +25,7 @@ class SignInReminderJob extends Job implements ShouldQueue
 
         foreach ($badBoys as $nation)
         {
-            $message = "Hi $nation->leader, \n \nThis message is being sent to you because you have not yet signed in for this period. Please go [link=https://camelotpnw.tech/signin]here[/link] to sign in. We need this information in order to plan properly and you must sign in to be eligible for all economic programs.";
+            $message = "Hi $nation->leader, \n \nThis message is being sent to you because you have not yet signed in for this period. Please go [link=https://bank.blackbird.im/signin]here[/link] to sign in. We need this information in order to plan properly and you must sign in to be eligible for all economic programs.";
 
             $client->sendMessage($nation->leader, "Sign In Reminder", $message);
         }
