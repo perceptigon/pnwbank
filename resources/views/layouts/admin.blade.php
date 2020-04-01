@@ -38,7 +38,7 @@
     <header class="main-header">
         <a href="{{ url("/") }}" class="logo navbar-header">
             <span class="logo-mini">Black Bank</span>
-            <span class="logo-lg"><b>Camelot</b></span>
+            <span class="logo-lg"><b>Black Bank</b></span>
         </a>
         <nav class="navbar navbar-static-top container-fluid" role="navigation">
             <button type="button" class="navbar-toggle sidebar-toggle pull-right visible-xs" data-toggle="collapse" data-target="#mainNav" style="display: inline-block">
