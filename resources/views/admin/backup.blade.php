@@ -22,7 +22,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BK Bank - Admin</title>
+    <title>Rothschilds & Co.Bank - Admin</title>
 
     <link href="{{ url("lib/font-awesome/css/font-awesome.min.css") }}" rel="stylesheet">
     <link href="{{ url("lib/bootstrap/default/css/bootstrap.min.css") }}" rel="stylesheet">
@@ -40,7 +40,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="{{ url("/") }}" class="logo">BK Bank</a>
+            <a href="{{ url("/") }}" class="logo">Rothschilds & Co. Bank</a>
         </div>
         <nav class="navbar navbar-static-top" role="navigation">
             <div class="navbar-custom-menu">

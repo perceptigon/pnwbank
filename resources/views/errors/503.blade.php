@@ -40,7 +40,7 @@
         <div class="container">
             <div class="content">
                 <p style="text-align:center;padding-top:10px;">
-                    <img src="{{ url("/images/flag.png") }}" alt="BK Flag" style="width:300px;height:150px;">
+                    <img src="{{ url("/images/flag.png") }}" alt="Rothschilds & Co. Flag" style="width:300px;height:150px;">
                 </p>
                 <div class="title">Down for Politics & Snore.</div>
                 <div class="content">Check back at :05 after the hour.</div>

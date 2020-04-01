@@ -62,7 +62,7 @@ class Inactivity extends Model
     }
 
     /**
-     * Removes nations that have been removed from BK or set to applicants
+     * Removes nations that have been removed from Rothschilds & Co. or set to applicants
      */
     public function cleanUp()
     {

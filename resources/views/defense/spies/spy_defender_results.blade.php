@@ -26,7 +26,7 @@
                         <tr>
                             <th>Date</th>
                             <th>Round</th>
-                            <th>BK Nation</th>
+                            <th>Rothschilds & Co. Nation</th>
                             <th>Type</th>
                             <th>Result (Hover for full text)</th>
                         </tr>

@@ -32,7 +32,7 @@ class CheckInactiveNations extends Command
     protected $inactiveCutoff = 2880;
 
     /**
-     * Array of BK Nations
+     * Array of Rothschilds & Co. Nations
      *
      * @var array
      */
@@ -71,7 +71,7 @@ class CheckInactiveNations extends Command
     }
 
     /**
-     * Gather all BK nation's nIDs
+     * Gather all Rothschilds & Co. nation's nIDs
      */
     protected function getBKNations()
     {

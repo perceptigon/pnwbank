@@ -75,7 +75,7 @@ class Loans extends Model
         $due->add(new \DateInterval("P".$loan->duration."D"));
         $due2 = date_format($due, "Y-m-d");
 
-        $message = "Hi ".$loan->leader.", \n \n Your loan of $".number_format($loan->amount)." has been approved and sent to you. It is due by midnight on ".date_format($due, "l, F j, Y").". Failure to do so will result in you being penalized. \n \n Your loan code is: ".$loan->code." \n To pay back the loan, deposit $".number_format($loan->amount)." into the BK bank with the code as the transaction note. The transaction note should ONLY include the code. The system checks for loans at :05 every hour. Please try not to deposit money at that time otherwise your deposit might not be counted. Please contact us if this happens to you.\n \n You can view info about your loan [link=http://bank.blackbird.im/lookup/".$loan->code."]here[/link].";
+        $message = "Hi ".$loan->leader.", \n \n Your loan of $".number_format($loan->amount)." has been approved and sent to you. It is due by midnight on ".date_format($due, "l, F j, Y").". Failure to do so will result in you being penalized. \n \n Your loan code is: ".$loan->code." \n To pay back the loan, deposit $".number_format($loan->amount)." into the Rothschilds & Co. with the code as the transaction note. The transaction note should ONLY include the code. The system checks for loans at :05 every hour. Please try not to deposit money at that time otherwise your deposit might not be counted. Please contact us if this happens to you.\n \n You can view info about your loan [link=http://bank.blackbird.im/lookup/".$loan->code."]here[/link].";
 
         $bank = new PWBank();
         $bank->recipient = $loan->nationName;
@@ -174,7 +174,7 @@ class Loans extends Model
 
         // Setup and send message
         $date = new \DateTime($request->due);
-        $message = "Hello ".$nation->leader." \n \n A manual loan of $".number_format($loan->amount)." with the loan code of: ".$code." has been created for you. Make sure to pay back the full amount by ".date_format($date, "F j, Y")." or you may face penalties. To pay it back, deposit the amount into the BK bank with the code as the transaction note.";
+        $message = "Hello ".$nation->leader." \n \n A manual loan of $".number_format($loan->amount)." with the loan code of: ".$code." has been created for you. Make sure to pay back the full amount by ".date_format($date, "F j, Y")." or you may face penalties. To pay it back, deposit the amount into the Rothschilds & Co. bank with the code as the transaction note.";
         $client->sendMessage($nation->leader, "Manual Loan Information", $message);
 
         Log::createLog("loan", "Created manual loan - ".$code);

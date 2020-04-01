@@ -542,7 +542,7 @@ class Verify
     }
 
     /**
-     * Checks if the nation is in BK by checking their alliance ID.
+     * Checks if the nation is in Rothschilds & Co. by checking their alliance ID.
      *
      * @return bool
      */

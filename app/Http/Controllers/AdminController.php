@@ -1230,7 +1230,7 @@ class AdminController extends Controller
     }
 
     /**
-     * View the members of BK and their resources and shit
+     * View the members of Rothschilds & Co. and their resources and shit
      *
      * @param int $nID
      * @return $this|\Illuminate\Contracts\View\Factory|\Illuminate\View\View

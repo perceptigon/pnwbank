@@ -35,7 +35,7 @@
             ],
             datasets : [
                 {
-                    label : "BK Bank Balance",
+                    label : "Rothschilds & Co. Bank Balance",
                     backgroundColor : "rgba(224, 142, 11, 0.7)",
                     data : [
                         @foreach ($stats->money as $money)

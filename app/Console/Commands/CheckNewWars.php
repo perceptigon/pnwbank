@@ -24,7 +24,7 @@ class CheckNewWars extends Command
      *
      * @var string
      */
-    protected $description = 'Checks for new BK defensive wars';
+    protected $description = 'Checks for new Rothschilds & Co. defensive wars';
 
     protected $war;
 
