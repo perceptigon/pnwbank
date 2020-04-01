@@ -1,8 +1,8 @@
 {
     "name": "yosodog/BKBank",
-    "description": "The Black Knights Bank",
+    "description": "Rothschilds & Co. Bank",
     "minimum-stability": "dev",
-    "keywords": ["bank", "black knights"],
+    "keywords": ["bank", "Rothschilds & Co."],
     "license": "",
     "type": "project",
     "require": {

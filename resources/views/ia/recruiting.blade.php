@@ -57,7 +57,7 @@
                                 <p>
                                     <br>
                                     <br>
-                                    As always, if you have any questions about Camelot or the game, in general, let me know and I will get back to you as soon as possible.
+                                    As always, if you have any questions about Rothschilds & Co. or the game, in general, let me know and I will get back to you as soon as possible.
                                     <br>
                                     <br>
                                     Thanks!</p>
