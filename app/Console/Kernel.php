@@ -41,7 +41,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command("loan:checkLoanPayments")->cron('/5 * * * *');
+        $schedule->command("loan:checkLoanPayments")->cron('5,10,15,20,25,30,35,40,45,50 * * * * ');
         $schedule->command("loan:CheckLateLoans")->cron('11 0 * * *');
         $schedule->command("loan:checkLoansDueToday")->cron('12 0 * * *');
         $schedule->command("market:checkOffers")->cron('13 * * * *');
