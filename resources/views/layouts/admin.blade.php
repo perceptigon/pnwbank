@@ -37,7 +37,7 @@
 <div class="wrapper">
     <header class="main-header">
         <a href="{{ url("/") }}" class="logo navbar-header">
-            <span class="logo-mini">CamNet</span>
+            <span class="logo-mini">Black Bank</span>
             <span class="logo-lg"><b>Camelot</b></span>
         </a>
         <nav class="navbar navbar-static-top container-fluid" role="navigation">
