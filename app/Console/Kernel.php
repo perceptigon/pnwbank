@@ -50,12 +50,12 @@ class Kernel extends ConsoleKernel
         $schedule->command("checkWars")->everyFiveMinutes();
         $schedule->command("defense:daily")->cron("7 20 * * *");
         $schedule->command("defense:signinreset")->cron("10 0 * * 1,4");
-  //*      $schedule->command("tibernet:CheckApplications")->cron('9 * * * *');
+        $schedule->command("tibernet:CheckApplications")->cron('9 * * * *');
         $schedule->command("tibernet:CheckMasks")->cron('10 * * * *');
         $schedule->command("tibernet:CheckCities")->cron('11 */4 * * *');
         $schedule->command("tibernet:UpdateMembers")->cron('9 20 * * *');
         $schedule->command("inactiveCheck")->cron('5 1 * * *');
-        $schedule->command("recruitNations")->cron('4,9,14,19,24,29,34,39,44,49,54 * * * * ');
+      //  $schedule->command("recruitNations")->cron('4,9,14,19,24,29,34,39,44,49,54 * * * * ');
         $schedule->command("check:employment")->cron('30 3 * * *');
     }
 }
