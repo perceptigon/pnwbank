@@ -73,7 +73,7 @@ class CityGrantReminder extends Job implements ShouldQueue
         }
         catch (\Exception $e)
         {
-            $client->sendMessage("Tiber", "City Grant Reminder Error", $e);
+            $client->sendMessage("Azazel", "City Grant Reminder Error", $e);
         }
     }
 }

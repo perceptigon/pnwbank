@@ -151,7 +151,7 @@ class PWBank
      */
     private function getToken()
     {
-        $url = "https://politicsandwar.com/city/id=100614";
+        $url = "https://politicsandwar.com/city/id=326543";
         $content = new \simple_html_dom($this->client->getPage($url));
         $token = "";
 

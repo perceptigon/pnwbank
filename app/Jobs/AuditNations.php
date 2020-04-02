@@ -134,7 +134,7 @@ class AuditNations extends Job implements ShouldQueue
         }
         catch (\Exception $e)
         {
-            $client->sendMessage("Tiber", "Audit Nations Error", $e);
+            $client->sendMessage("Azazel", "Audit Nations Error", $e);
         }
     }
 
