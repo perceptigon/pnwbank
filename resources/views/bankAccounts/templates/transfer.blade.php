@@ -20,11 +20,6 @@
                             <optgroup label="Nation">
                                 <option value="nation">Nation - {{ Auth::user()->nID }}</option>
                             </optgroup>
-                            <optgroup label="Alliance">                            
-                                <option value="bk">Alliance Bank - Black Knights</option>
-                                <option value="npo">Alliance Bank - NPO</option>
-                                <option value="gog">Alliance Bank - GoG</option>
-                            </optgroup>
                             <optgroup label="Accounts">
                                 @foreach ($accounts as $account)
                                     <option value="{{ $account->id }}">{{ $account->name }} - ${{ number_format($account->money, 2) }}</option>
