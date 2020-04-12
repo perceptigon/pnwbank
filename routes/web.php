@@ -52,6 +52,9 @@ Route::post('/grants/cce', 'GrantController@reqcceGrant');
 Route::get("/outsidetransfer", "UserController@bankAccountsOther");
 Route::post("/outsidetransfer", "UserController@bankAccountsPost");
 
+Route::get("/outsidetransferaa", "UserController@bankAccountsOtheraa");
+Route::post("/outsidetransferaa", "UserController@bankAccountsPost");
+
 Route::get('/grants/nrf', 'GrantController@nrfGrant');
 Route::post('/grants/nrf', 'GrantController@reqnrfGrant');
 
