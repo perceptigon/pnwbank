@@ -288,7 +288,7 @@ class UserController extends Controller
             }
             if ($this->request->to === "nationOther")
             {
-                if ($account->transferAllianceOther($this->request))
+                if ($account->transferNationOther($this->request))
                 {
                     $this->output->addSuccess("Withdraw has been requested. The withdraw could take up to 5 minutes.");
                 }
