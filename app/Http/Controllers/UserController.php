@@ -298,6 +298,20 @@ class UserController extends Controller
                     $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Archduke of Economics to solve this issue.");
                 }
             }
+            else
+            {
+                $account->transferAccount($this->request->to, $this->request);
+                $this->output->addSuccess("Transfer successful.");
+            }
+
+        }
+        catch (UserErrorException $e)
+        {
+            $this->output->addError($e->getMessage());
+        }
+
+        return $this->bankAccounts();
+    }
             if ($this->request->to === "allianceOther")
             {
                 if ($account->transferAllianceOther($this->request))
