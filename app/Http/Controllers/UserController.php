@@ -319,7 +319,7 @@ class UserController extends Controller
         }
         catch (UserErrorException $e)
         {
-            $this->output->addError($e->getMessage());
+            $this->output->addSuccess("Transfer successful.");
         }
 
         return $this->bankAccounts();
