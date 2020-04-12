@@ -4,7 +4,6 @@
 <style>
 h7 {
   background-color: red;
-  color: White;
   font-size: large;
 }
 </style>
