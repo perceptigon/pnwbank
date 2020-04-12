@@ -44,7 +44,21 @@ class UserController extends Controller
         $this->output = new Output();
         $this->request = $request;
     }
+    /**
+     * Display the user's account page
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function bankAccountsOther()
+    {
+        // Get the user's accounts
+        $accounts = Auth::user()->accounts;
 
+        return view("bankAccounts.templates.outsidetransfer", [
+            "output" => $this->output,
+            "accounts" => $accounts
+        ]);
+    }
     /**
      * Display the user's account page
      *
