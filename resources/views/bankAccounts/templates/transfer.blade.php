@@ -1,6 +1,6 @@
 </style>
 <div class="panel panel-default">
-    <div class="panel-heading">Transfer <div class="pull-right"><button class="button" onclick="window.location.href = '/outsidetransfer';">Offsite Transfer</button></div></div>
+    <div class="panel-heading">Transfer <div class="pull-right"><button class="button" onclick="window.location.href = '/outsidetransferaa';">Nation Transfer</button><button class="button" onclick="window.location.href = '/outsidetransfer';">Allaince Transfer</button></div></div>
     <div class="panel-body">
         <form method="post">
             <div class="row">
