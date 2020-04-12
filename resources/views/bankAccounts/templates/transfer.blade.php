@@ -1,5 +1,6 @@
+</style>
 <div class="panel panel-default">
-    <div class="panel-heading">Transfer</div>
+    <div class="panel-heading">Transfer <div class="pull-right"><button class="button" onclick="window.location.href = '/outsidetransfer';">Offsite Transfer</button></div></div>
     <div class="panel-body">
         <form method="post">
             <div class="row">
@@ -20,6 +21,7 @@
                             <optgroup label="Nation">
                                 <option value="nation">Nation - {{ Auth::user()->nID }}</option>
                             </optgroup>
+
                             <optgroup label="Accounts">
                                 @foreach ($accounts as $account)
                                     <option value="{{ $account->id }}">{{ $account->name }} - ${{ number_format($account->money, 2) }}</option>

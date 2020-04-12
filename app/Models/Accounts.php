@@ -241,6 +241,177 @@ class Accounts extends Model
 
         return true;
     }
+    /**
+     * Transfer stuff to a nation
+     *
+     * @param Request $request
+     * @return bool
+     * @throws UserErrorException
+     */
+    public function transferNationOther(Request $request) : bool
+    {
+        // Get the nation we're sending shit to
+        $nation = new Nation($this->nID);
+
+        $bank = new PWBank();
+
+        $resources = ["money", "coal", "oil", "uranium", "iron", "bauxite", "gas", "munitions", "steel", "aluminum", "food", "lead"]; // So we can loop easily
+
+        $total = 0; // We'll use this to make sure they're not transferring nothing
+
+        // Loop over the resources and verify shit
+        foreach ($resources as $res)
+        {
+            // Verify that the account has the right amounts to transfer
+            if ($this->$res < $request->$res)
+                throw new UserErrorException("You don't have enough {$res} to complete that transfer");
+
+            if ($request->$res < 0)
+                throw new UserErrorException("You entered a negative value for {$res}. SWIPER NO SWIPING");
+
+            $total += $request->$res;
+
+            $this->$res -= $request->$res; // Subtract if from this account
+        }
+
+        if ($total < 0.01)
+            throw new UserErrorException("You can't withdraw nothing dumbo!");
+
+        // Add the stuff to the bank
+        $bank->recipient = $request->nationname;
+        $bank->note = "Transfer from $nation->nationName";
+        $bank->money = $request->money;
+        $bank->coal = $request->coal;
+        $bank->oil = $request->oil;
+        $bank->uranium = $request->uranium;
+        $bank->iron = $request->iron;
+        $bank->bauxite = $request->bauxite;
+        $bank->gasoline = $request->gas;
+        $bank->munitions = $request->munitions;
+        $bank->steel = $request->steel;
+        $bank->aluminum  = $request->aluminum;
+        $bank->food = $request->food;
+        $bank->lead = $request->lead;
+
+        // Verify we have enough stored to send this request
+        if (! $bank->checkIfFundsAvailable())
+            return false;
+
+        // Setup message
+        $message = "Hi $nation->leader,\n\n This message is being sent to you to confirm your successful withdraw from {$this->name}\n\n";
+
+        foreach ($resources as $res)
+        {
+            // Here we'll build a 'receipt' for the transaction showing them what was sent. lol I know it looks like crap
+            $message .= ucfirst($res) . " - " . number_format($request->$res, 2) . "\n";
+        }
+
+        // Create transaction
+        $transaction = [
+            "fromAccountID" => $this->id,
+            "fromAccount" => true,
+            "toAccount" => false,
+            "toName" => $request->nationname,
+        ];
+
+        foreach ($resources as $res)
+            $transaction[$res] = $request->$res; // Add whatever money/resources were moved
+
+        // Save this account
+        $this->save();
+
+        Transactions::create($transaction);
+
+        dispatch(new SendMoney($bank, $nation->leader, "Withdraw Confirmation", $message));
+
+        return true;
+    }
+    /**
+     * Transfer stuff to a alliance
+     *
+     * @param Request $request
+     * @return bool
+     * @throws UserErrorException
+     */
+    public function transferAllianceOther(Request $request) : bool
+    {
+        // Get the nation we're sending shit to
+        $nation = new Nation($this->nID);
+
+        $bank = new PWBank();
+
+        $resources = ["money", "coal", "oil", "uranium", "iron", "bauxite", "gas", "munitions", "steel", "aluminum", "food", "lead"]; // So we can loop easily
+
+        $total = 0; // We'll use this to make sure they're not transferring nothing
+
+        // Loop over the resources and verify shit
+        foreach ($resources as $res)
+        {
+            // Verify that the account has the right amounts to transfer
+            if ($this->$res < $request->$res)
+                throw new UserErrorException("You don't have enough {$res} to complete that transfer");
+
+            if ($request->$res < 0)
+                throw new UserErrorException("You entered a negative value for {$res}. SWIPER NO SWIPING");
+
+            $total += $request->$res;
+
+            $this->$res -= $request->$res; // Subtract if from this account
+        }
+
+        if ($total < 0.01)
+            throw new UserErrorException("You can't withdraw nothing dumbo!");
+
+        // Add the stuff to the bank
+        $bank->recipient = $request->alliancename;
+        $bank->type = "Alliance";
+        $bank->note = "Transfer from $nation->nationName";
+        $bank->money = $request->money;
+        $bank->coal = $request->coal;
+        $bank->oil = $request->oil;
+        $bank->uranium = $request->uranium;
+        $bank->iron = $request->iron;
+        $bank->bauxite = $request->bauxite;
+        $bank->gasoline = $request->gas;
+        $bank->munitions = $request->munitions;
+        $bank->steel = $request->steel;
+        $bank->aluminum  = $request->aluminum;
+        $bank->food = $request->food;
+        $bank->lead = $request->lead;
+
+        // Verify we have enough stored to send this request
+        if (! $bank->checkIfFundsAvailable())
+            return false;
+
+        // Setup message
+        $message = "Hi $nation->leader,\n\n This message is being sent to you to confirm your successful withdraw from {$this->name}\n\n";
+
+        foreach ($resources as $res)
+        {
+            // Here we'll build a 'receipt' for the transaction showing them what was sent. lol I know it looks like crap
+            $message .= ucfirst($res) . " - " . number_format($request->$res, 2) . "\n";
+        }
+
+        // Create transaction
+        $transaction = [
+            "fromAccountID" => $this->id,
+            "fromAccount" => true,
+            "toAccount" => false,
+            "toName" => $request->alliancename,
+        ];
+
+        foreach ($resources as $res)
+            $transaction[$res] = $request->$res; // Add whatever money/resources were moved
+
+        // Save this account
+        $this->save();
+
+        Transactions::create($transaction);
+
+        dispatch(new SendMoney($bank, $nation->leader, "Withdraw Confirmation", $message));
+
+        return true;
+    }
 
     /**
      * Creates a deposit request for the account

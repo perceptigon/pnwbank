@@ -257,6 +257,30 @@ class UserController extends Controller
                     $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Archduke of Economics to solve this issue.");
                 }
             }
+            if ($this->request->to === "nationOther")
+            {
+                if ($account->transferNationOther($this->request))
+                {
+                    $this->output->addSuccess("Withdraw has been requested. The withdraw could take up to 5 minutes.");
+                }
+                else
+                {
+                    // If this is false, then we didn't have enough resources to complete the transaction
+                    $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Archduke of Economics to solve this issue.");
+                }
+            }
+            if ($this->request->to === "allianceOther")
+            {
+                if ($account->transferAllianceOther($this->request))
+                {
+                    $this->output->addSuccess("Withdraw has been requested. The withdraw could take up to 5 minutes.");
+                }
+                else
+                {
+                    // If this is false, then we didn't have enough resources to complete the transaction
+                    $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Archduke of Economics to solve this issue.");
+                }
+            }
             else
             {
                 $account->transferAccount($this->request->to, $this->request);
