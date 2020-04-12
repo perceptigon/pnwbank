@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+<body>
+<h6>These Options have almost no form validation, be sure you fill this out correctly. Its not reversible and we will not refund you for mistakes</h1>
+</body>
 <div class="panel panel-default">
     <div class="panel-heading">Transfer to a Nation</div>
     <div class="panel-body">
@@ -22,7 +25,6 @@
                         <select class="form-control" name="to" id="tran_to">
                                <optgroup label="nation">
                                <option value="nationOther">Nation - Type the Nation Name Below</option>
-
                                 <input type="text" class="form-control" name="nationname" value="Replace me">
                             </optgroup>
                         </select>
