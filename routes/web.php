@@ -22,20 +22,35 @@ Route::get('/api/deposit/{acct}', 'APIController@deposit');
 Route::get('/grants/city', 'GrantController@city');
 Route::post('/grants/city', 'GrantController@reqCity');
 
+Route::get('change-password', 'ChangePasswordController@index');
+Route::post('change-password', 'ChangePasswordController@store')->name('change.password');
+
 Route::get("/contact", "HomeController@contact");
 Route::post("/contact", "HomeController@contactPost");
 
-Route::get("/grants/bauxite", "GrantController@bauxite");
-Route::post("/grants/bauxite", "GrantController@reqBauxite");
+Route::get("/grants/bw", "GrantController@bw");
+Route::post("/grants/bw", "GrantController@reqbw");
 
-Route::get("/grants/entrance", "GrantController@entrance");
-Route::post("/grants/entrance", "GrantController@reqEntrance");
+Route::get("/grants/cp", "GrantController@cp");
+Route::post("/grants/cp", "GrantController@reqcp");
 
-Route::get("/grants/oil", "GrantController@oil");
-Route::post("/grants/oil", "GrantController@reqOil");
+Route::get("/grants/acp", "GrantController@acp");
+Route::post("/grants/acp", "GrantController@reqacp");
 
-Route::get("/admin/bauxite", "AdminController@bauxite");
-Route::post("/admin/bauxite", "AdminController@reqBauxite");
+Route::get("/grants/rebuild", "GrantController@rebuild");
+Route::post("/grants/rebuild", "GrantController@reqrebuild");
+
+Route::get("/admin/bw", "AdminController@bw");
+Route::post("/admin/bw", "AdminController@bwPost");
+
+Route::get("/admin/rebuild", "AdminController@rebuild");
+Route::post("/admin/rebuild", "AdminController@rebuildPost");
+
+Route::get("/admin/cp", "AdminController@cp");
+Route::post("/admin/cp", "AdminController@cpPost");
+
+Route::get("/admin/acp", "AdminController@acp");
+Route::post("/admin/acp", "AdminController@acpPost");
 
 Route::get('/grants/id', 'GrantController@idGrant');
 Route::post('/grants/id', 'GrantController@reqIDGrant');
@@ -49,26 +64,12 @@ Route::post('/grants/egr', 'GrantController@reqEGRGrant');
 Route::get('/grants/cce', 'GrantController@cceGrant');
 Route::post('/grants/cce', 'GrantController@reqcceGrant');
 
-Route::get("/outsidetransfer", "UserController@bankAccountsOther");
-Route::post("/outsidetransfer", "UserController@bankAccountsPost");
-
-Route::get("/outsidetransferaa", "UserController@bankAccountsOtheraa");
-Route::post("/outsidetransferaa", "UserController@bankAccountsPost");
-
-Route::get('/grants/nrf', 'GrantController@nrfGrant');
-Route::post('/grants/nrf', 'GrantController@reqnrfGrant');
-
-Route::get('/grants/mlp', 'GrantController@mlpGrant');
-Route::post('/grants/mlp', 'GrantController@reqmlpGrant');
-
 Route::get('/grants/pb', 'GrantController@pbGrant');
 Route::post('/grants/pb', 'GrantController@reqpbGrant');
 
 Route::get('/grants/irondome', 'GrantController@irondomeGrant');
 Route::post('/grants/irondome', 'GrantController@reqirondomeGrant');
 
-Route::get('/grants/activity', 'GrantController@activity');
-Route::post('/grants/activity', 'GrantController@reqActivity');
 
 Route::get('/loans', 'LoanController@loans');
 Route::post('/loans', 'LoanController@reqloan');
@@ -100,32 +101,14 @@ Route::post("/admin/so", "AdminController@soPost");
 Route::get("/admin/city", "AdminController@city");
 Route::post("/admin/city", "AdminController@cityPost");
 
-Route::get("/admin/entrance", "AdminController@entrance");
-Route::post("/admin/entrance", "AdminController@entrancePost");
-
-Route::get("/admin/activity", "AdminController@activity");
-Route::post("/admin/activity", "AdminController@activityPost");
-
-Route::get("/admin/oil", "AdminController@oil");
-Route::post("/admin/oil", "AdminController@oilPost");
-
 Route::get("/admin/id", "AdminController@id");
 Route::post("/admin/id", "AdminController@idPost");
-
-Route::get("/admin/nukes", "AdminController@nukes");
-Route::post("/admin/nukes", "AdminController@nukesPost");
-
-Route::get("/admin/mlp", "AdminController@mlp");
-Route::post("/admin/mlp", "AdminController@mlpPost");
 
 Route::get("/admin/egr", "AdminController@egr");
 Route::post("/admin/egr", "AdminController@egrPost");
 
 Route::get("/admin/cce", "AdminController@cce");
 Route::post("/admin/cce", "AdminController@ccePost");
-
-Route::get("/admin/nrf", "AdminController@nrf");
-Route::post("/admin/nrf", "AdminController@nrfPost");
 
 Route::get("/admin/pb", "AdminController@pb");
 Route::post("/admin/pb", "AdminController@pbPost");
@@ -147,6 +130,12 @@ Route::get("/admin/accounts", "AdminController@accounts");
 
 Route::get("/accounts", "UserController@bankAccounts");
 Route::post("/accounts", "UserController@bankAccountsPost");
+
+Route::get("/outsidetransfer", "UserController@bankAccountsOther");
+Route::post("/outsidetransfer", "UserController@bankAccountsPostother");
+
+Route::get("/outsidetransferaa", "UserController@bankAccountsOtheraa");
+Route::post("/outsidetransferaa", "UserController@bankAccountsPostaa");
 
 Route::get("/accounts/{id}", "UserController@viewAccount");
 Route::post("/accounts/{id}", "UserController@viewAccountPost");
