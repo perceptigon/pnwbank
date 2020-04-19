@@ -49,12 +49,12 @@ class UserController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function bankAccountsOtheraa()
+    public function bankAccountsOther()
     {
         // Get the user's accounts
         $accounts = Auth::user()->accounts;
 
-        return view("bankAccounts.templates.outsidetransferaa", [
+        return view("bankAccounts.templates.outsidetransfer", [
             "output" => $this->output,
             "accounts" => $accounts
         ]);
@@ -64,12 +64,12 @@ class UserController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function bankAccountsOther()
+    public function bankAccountsOtheraa()
     {
         // Get the user's accounts
         $accounts = Auth::user()->accounts;
 
-        return view("bankAccounts.templates.outsidetransfer", [
+        return view("bankAccounts.templates.outsidetransferaa", [
             "output" => $this->output,
             "accounts" => $accounts
         ]);
@@ -116,7 +116,58 @@ class UserController extends Controller
 
         return $this->bankAccounts();
     }
+    /**
+     * POST method for any POST requests coming from the user's account page
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function bankAccountsPostother()
+    {
+        try
+        {
+            // Route the post request
+            if (isset($this->request->createAccount))
+                $this->createBankAccount();
+            elseif (isset($this->request->deleteAccount))
+                $this->deleteBankAccount();
+            elseif (isset($this->request->transfer))
+                $this->transferAlliance();
+            else
+                throw new UserErrorException("Couldn't determine route");
+        }
+        catch (UserErrorException $e)
+        {
+            $this->output->addError($e->getMessage());
+        }
 
+        return $this->bankAccounts();
+    }
+    /**
+     * POST method for any POST requests coming from the user's account page
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function bankAccountsPostnation()
+    {
+        try
+        {
+            // Route the post request
+            if (isset($this->request->createAccount))
+                $this->createBankAccount();
+            elseif (isset($this->request->deleteAccount))
+                $this->deleteBankAccount();
+            elseif (isset($this->request->transfer))
+                $this->transferaa();
+            else
+                throw new UserErrorException("Couldn't determine route");
+        }
+        catch (UserErrorException $e)
+        {
+            $this->output->addError($e->getMessage());
+        }
+
+        return $this->bankAccounts();
+    }
     /**
      * Create a bank account
      */
@@ -286,18 +337,44 @@ class UserController extends Controller
                     $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Archduke of Economics to solve this issue.");
                 }
             }
-            if ($this->request->to === "nationOther")
+            else
             {
-                if ($account->transferNationOther($this->request))
-                {
-                    $this->output->addSuccess("Withdraw has been requested. The withdraw could take up to 5 minutes.");
-                }
-                else
-                {
-                    // If this is false, then we didn't have enough resources to complete the transaction
-                    $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Archduke of Economics to solve this issue.");
-                }
+                $account->transferAccount($this->request->to, $this->request);
+                $this->output->addSuccess("Transfer successful.");
             }
+
+        }
+        catch (UserErrorException $e)
+        {
+            $this->output->addError($e->getMessage());
+        }
+
+        return $this->bankAccounts();
+    }
+    /**
+     * Start a transfer
+     */
+    public function transferAlliance()
+    {
+        // Get the account that is being transferred from
+        $account = Accounts::find($this->request->from);
+
+        if ($account == null || $account->count() == 0)
+        {
+            $this->output->addError("That account doesn't exist");
+
+            return $this->bankAccounts();
+        }
+
+        if (Auth::user()->nID != $account->nID)
+        {
+            $this->output->addError("You don't own that account");
+
+            return $this->bankAccounts();
+        }
+
+        try
+        {
             if ($this->request->to === "allianceOther")
             {
                 if ($account->transferAllianceOther($this->request))
@@ -319,12 +396,61 @@ class UserController extends Controller
         }
         catch (UserErrorException $e)
         {
-            $this->output->addSuccess("Transfer successful.");
+            $this->output->addError($e->getMessage());
         }
 
         return $this->bankAccounts();
     }
+    /**
+     * Start a transfer
+     */
+    public function bankAccountsPostaa()
+    {
+        // Get the account that is being transferred from
+        $account = Accounts::find($this->request->from);
 
+        if ($account == null || $account->count() == 0)
+        {
+            $this->output->addError("That account doesn't exist");
+
+            return $this->bankAccounts();
+        }
+
+        if (Auth::user()->nID != $account->nID)
+        {
+            $this->output->addError("You don't own that account");
+
+            return $this->bankAccounts();
+        }
+
+        try
+        {
+            if ($this->request->to === "nationOther")
+            {
+                if ($account->transferNationOther($this->request))
+                {
+                    $this->output->addSuccess("Withdraw has been requested. The withdraw could take up to 5 minutes.");
+                }
+                else
+                {
+                    // If this is false, then we didn't have enough resources to complete the transaction
+                    $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Archduke of Economics to solve this issue.");
+                }
+            }
+            else
+            {
+                $account->transferAccount($this->request->to, $this->request);
+                $this->output->addSuccess("Transfer successful.");
+            }
+
+        }
+        catch (UserErrorException $e)
+        {
+            $this->output->addError($e->getMessage());
+        }
+
+        return $this->bankAccounts();
+    }
     /**
      * GET: /user/dashboard
      *
@@ -335,7 +461,7 @@ class UserController extends Controller
     public function dashboard()
     {
         $defNation = DefenseNations::getNation(Auth::user()->nID);
-        if (! $defNation->inBK) // If they're not in The Rothschild Family, redirect to home because fuck them
+        if (! $defNation->inBK) // If they're not in Camelot, redirect to home because fuck them
             return redirect("/");
 
         $mmrScore = Warchest::mmrScoreFromDefNations($defNation);

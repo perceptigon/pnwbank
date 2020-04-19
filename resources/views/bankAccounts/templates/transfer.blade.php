@@ -1,6 +1,5 @@
-</style>
 <div class="panel panel-default">
-    <div class="panel-heading">Transfer <div class="pull-right"><button class="button" onclick="window.location.href = '/outsidetransferaa';">Nation Transfer</button><button class="button" onclick="window.location.href = '/outsidetransfer';">Alliance Transfer</button></div></div>
+    <div class="panel-heading">Transfer <div class="pull-right"><button onclick="window.location.href = '/outsidetransferaa';">Account to Nation Transfer</button><button onclick="window.location.href = '/outsidetransfer';">Account to Alliance Transfer</button></div></div>
     <div class="panel-body">
         <form method="post">
             <div class="row">
@@ -94,7 +93,3 @@
                     {{ csrf_field() }}
                     <input type="submit" name="transfer" value="Transfer" class="btn btn-block btn-primary">
                 </div>
-            </div>
-        </form>
-    </div>
-</div>
