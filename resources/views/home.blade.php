@@ -14,5 +14,11 @@
         <div class="col-lg-6">
             <a href="{{ url("/defense/dashboard") }}" class="btn btn-xl btn-link homeButton">Defense</a>
         </div>
+        <div class="col-lg-6">
+            <a href="{{ url("/outsidetransferaa") }}" class="btn btn-xl btn-link homeButton">Withdraw to a nation</a>
+        </div>
+        <div class="col-lg-6">
+            <a href="{{ url("/outsidetransfer") }}" class="btn btn-xl btn-link homeButton">Withdraw to an alliance</a>
+        </div>
     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 @endsection
