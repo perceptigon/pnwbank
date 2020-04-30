@@ -109,7 +109,7 @@
                 @endif
                      |
 
-<a href="https://bank.blackbird.im/admin" target="_blank">Admin</a> 
+<a href="https://bank.blackbird.im/admin" target="_blank">Control Panel</a> 
 |
 <a href="https://mysql.bank.blackbird.im" target="_blank">phpMyAdmin</a>
 |
