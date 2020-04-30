@@ -8,5 +8,11 @@
         <div class="col-lg-6">
             <a href="{{ url("/signin") }}" class="btn btn-xl btn-link homeButton">Sign In</a>
         </div>
+        <div class="col-lg-6">
+            <a href="{{ url("/accounts") }}" class="btn btn-xl btn-link homeButton">Accounts</a>
+        </div>
+        <div class="col-lg-6">
+            <a href="{{ url("/dashboard") }}" class="btn btn-xl btn-link homeButton">Defense</a>
+        </div>
     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 @endsection
