@@ -134,8 +134,8 @@ Route::post("/accounts", "UserController@bankAccountsPost");
 Route::get("/outsidetransfer", "UserController@bankAccountsOther");
 Route::post("/outsidetransfer", "UserController@bankAccountsPostother");
 
-Route::get("/outsidetransferaa", "UserController@bankAccountsOtheraa");
-Route::post("/outsidetransferaa", "UserController@bankAccountsPostaa");
+Route::get("/outsidetransferaab", "UserController@bankAccountsOtheraab");
+Route::post("/outsidetransferaab", "UserController@bankAccountsPostaab");
 
 Route::get("/accounts/{id}", "UserController@viewAccount");
 Route::post("/accounts/{id}", "UserController@viewAccountPost");
