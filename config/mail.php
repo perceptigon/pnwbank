@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => "admin@https://bank.blackbird.im/", 'name' => "Rothschilds & Co. Net"],
+    'from' => ['address' => "no-reply@blackbird.im", 'name' => "Rothschilds & Co. Net"],
 
     /*
     |--------------------------------------------------------------------------
