@@ -27,28 +27,6 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url("/ia/") }}">Apply</a></li>
                     <li><a href="{{ url("/accounts") }}">Accounts</a></li>                      
-                    <li><a href="{{ url("/loans") }}">Loans</a></li>
-                    <li><a href="{{ url("/market") }}">Market</a></li>
-                    <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Grants<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ url("/grants/city") }}">Cities</a></li>
-                            <li><a href="{{ url("/grants/entrance") }}">Entrance</a></li>
-                            <li><a href="{{ url("/grants/activity") }}">Activity</a></li>
-                            <li><a href="{{ url("/grants/oil") }}">Oil</a></li>
-                            <li><a href="{{ url("/grants/nuke") }}">Nukes</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Project Grants<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="{{ url("/grants/id") }}">CIA</a></li>
-                            <li><a href="{{ url("/grants/irondome") }}">Iron Dome</a></li>
-                            <li><a href="{{ url("/grants/mlp") }}">MLP</a></li>
-                            <li><a href="{{ url("/grants/pb") }}">PB</a></li>
-                            <li><a href="{{ url("/grants/cce") }}">CCE</a></li>
-                            <li><a href="{{ url("/grants/nrf") }}">NRF</a></li>
-                            <li><a href="{{ url("/grants/egr") }}">EGR</a></li>
-                        </ul>
-                    </li>
                     <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Defense <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             @if (Auth::check())
