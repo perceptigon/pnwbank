@@ -131,11 +131,11 @@ Route::get("/admin/accounts", "AdminController@accounts");
 Route::get("/accounts", "UserController@bankAccounts");
 Route::post("/accounts", "UserController@bankAccountsPost");
 
-Route::get("/outsidetransferaa", "UserController@bankAccountsOtheraa");
-Route::post("/outsidetransferaa", "UserController@bankAccountsPostotheraa");
-
 Route::get("/outsidetransfer", "UserController@bankAccountsOther");
-Route::post("/outsidetransfer", "UserController@bankAccountsPost");
+Route::post("/outsidetransfer", "UserController@bankAccountsPostother");
+
+Route::get("/outsidetransferaa", "UserController@bankAccountsOtheraa");
+Route::post("/outsidetransferaa", "UserController@bankAccountsPostaa");
 
 Route::get("/accounts/{id}", "UserController@viewAccount");
 Route::post("/accounts/{id}", "UserController@viewAccountPost");
