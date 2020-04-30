@@ -108,14 +108,22 @@
                     <span class='badge'>{{ \App\Models\Contact::countPendReqs() ?? "" }}</span>
                 @endif
                      |
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Admin</a> |
-                <a href="https://www.youtube.com/watch?v=Nfrk2UdEOcQ" target="_blank">Phpmyadmin</a>
+
+<a href="https://bank.blackbird.im/admin" target="_blank">Admin</a> 
+|
+<a href="https://mysql.bank.blackbird.im" target="_blank">phpMyAdmin</a>
+|
+<a href="https://politicsandwar.com/alliance/id=7399" target="_blank">Rothschild Family</a> 
+|
+<a href="https://politicsandwar.com/nation/id=175001" target="_blank">Mayer Blackbird</a>
+
+
             </nav>
 
             <script src="{{ url("/lib/jquery/jquery.min.js") }}"></script>
             <script src="{{ url("/lib/bootstrap/default/js/bootstrap.min.js") }}"></script>
         </footer>
-        <!-- Yoso is still the best person in the world ya fucks -->
+        <!-- Blackbird is still the best person in the world ya fucks -->
     </body>
 @yield("scripts")
 </html>
