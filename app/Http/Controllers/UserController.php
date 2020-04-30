@@ -121,7 +121,7 @@ class UserController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function bankAccountsPostother()
+    public function bankAccountsPostotheraa()
     {
         try
         {
