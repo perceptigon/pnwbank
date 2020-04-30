@@ -8,5 +8,4 @@
         <div class="col-lg-6">
             <a href="{{ url("/signin") }}" class="btn btn-xl btn-link homeButton">Sign In</a>
         </div>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-@endsection
+    </div><br><br><br><br><br><br><br><br><br>
