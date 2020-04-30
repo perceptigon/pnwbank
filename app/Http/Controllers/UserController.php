@@ -49,12 +49,12 @@ class UserController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function bankAccountsOther()
+    public function bankAccountsOtheraa()
     {
         // Get the user's accounts
         $accounts = Auth::user()->accounts;
 
-        return view("bankAccounts.templates.outsidetransfer", [
+        return view("bankAccounts.templates.outsidetransferaa", [
             "output" => $this->output,
             "accounts" => $accounts
         ]);
@@ -64,12 +64,12 @@ class UserController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function bankAccountsOtheraa()
+    public function bankAccountsOther()
     {
         // Get the user's accounts
         $accounts = Auth::user()->accounts;
 
-        return view("bankAccounts.templates.outsidetransferaa", [
+        return view("bankAccounts.templates.outsidetransfer", [
             "output" => $this->output,
             "accounts" => $accounts
         ]);
