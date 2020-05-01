@@ -2,8 +2,8 @@
 
 @section('content')
 
-    <p style="text-align:center;padding-top:10px;"><img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:335.5px;height:300px;"><br> 
-<br><br>
+    <p style="text-align:center;padding-top:10px;"><img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:300px;height:269px;"><br> 
+<br>
 
 <font color="black">
 As one of the world's largest independent financial advisory groups, we offer a distinct perspective that makes a meaningful difference to our clients. business and wealth.
