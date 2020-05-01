@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ App::environment('local') ? "(Dev)" : "" }}Rothschilds & Co.</title>
-
+    <title>{{ App::environment('local') ? "(Dev)" : "" }}RnCo</title>
     <link rel="stylesheet" href="{{ url("/lib/bootstrap/paper/paper.min.css") }}">
     <link rel="stylesheet" href="{{ url("/css/default.css") }}">
 
@@ -16,7 +15,7 @@
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <a href="{{ url("/") }}" class="navbar-brand">Rothschilds & Co. {{ App::environment('local') ? "(Dev)" : "" }}</a>
+                <a href="{{ url("/") }}" class="navbar-brand"><img src="https://i.ibb.co/4WJMJBJ/imageedit-1-2849241818.png" width="43" height="56" title="RnCo Logo" alt="RnCo Logo" /> Rothschilds & Co.{{ App::environment('local') ? "(Dev)" : "" }}</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
