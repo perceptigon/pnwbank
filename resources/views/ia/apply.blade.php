@@ -30,7 +30,7 @@ We are not just an alliance, we are the Rothschild Family.
 </font>
 <br>
 
-<a href="https://politicsandwar.com/alliance/id=7399">Rothschild Family</a>
+<br>
 <br>
 </p>                </fieldset>
 
