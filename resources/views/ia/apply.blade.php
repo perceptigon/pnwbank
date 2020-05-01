@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <p style="text-align:center;padding-top:10px;"><img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:671px;height:600px;"><br> 
+    <p style="text-align:center;padding-top:10px;"><img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:335.5px;height:300px;"><br> 
 <br>
 
 
