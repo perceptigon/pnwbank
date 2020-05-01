@@ -3,10 +3,10 @@
 @section('content')
     <div class="row">
         <div class="col-lg-6">
-            <a href="{{ url("/ia/apply") }}" class="btn btn-xl btn-link homeButton">Apply</a>
+            <a href="{{ url("/ia/apply") }}" class="btn btn-xl btn-link homeButton">About</a>
         </div>
         <div class="col-lg-6">
-            <a href="{{ url("/signin") }}" class="btn btn-xl btn-link homeButton">Sign In</a>
+            <a href="{{ url("https://politicsandwar.fandom.com/wiki/Rothschild_Family") }}" class="btn btn-xl btn-link homeButton">Wiki</a>
         </div>
         <div class="col-lg-6">
             <a href="{{ url("/accounts") }}" class="btn btn-xl btn-link homeButton">Accounts</a>
