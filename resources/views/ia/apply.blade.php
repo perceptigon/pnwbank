@@ -14,7 +14,7 @@ Rothschild Family is a peaceful entity that conducts the best ethics policies in
 </p>
 <p style="text-align:center;padding-top:10px;font-style:italic;">
 <font color="black">Yes, my dear fellow, it all amounts to this: in order to do something first you must be something. We think Dante great, and he had a civilization of centuries behind him; the House of Rothschild is rich and it has required much more than one generation to attain such wealth. Such things all lie much deeper than one thinks.</font></p>
-<br><br>
+<br>
 <p style="text-align:center;padding-top:10px;">
 <font color="black">Rothschild Family is a place for active and peaceful but yet fearless nations that achieve great fortunes by negotiating impressive trade deals and investments. 
 <br>
@@ -26,7 +26,7 @@ That is because we are different with significantly more ambitious plans for our
 <u>We are not just an alliance, we are the <a href="https://politicsandwar.com/alliance/id=7399"><font color="black">Rothschild Family</font></a>.</u>
 </font>
 <br>
-
+<img src="{{ url("https://i.ibb.co/NmfgzmD/imageedit-21-6546803152.png") }}" alt="Rothschild Wax Seal" style="width:448px;height:275px;">
 
 <br>
 </p>                </fieldset>
