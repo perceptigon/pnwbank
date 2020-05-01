@@ -34,8 +34,9 @@
                             <li><a href="{{ url("/signin") }}">Sign In</a></li>
                         </ul>
                     </li>
+                    <li><a href="{{ url("/ia/apply") }}">About</a></li>
                 </ul>
-                <li><a href="{{ url("/ia/apply") }}">About</a></li>
+               
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>
