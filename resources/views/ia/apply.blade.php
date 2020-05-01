@@ -28,7 +28,7 @@ That is because we are different with significantly more ambitious plans for our
 <br><br>
 We are not just an alliance, we are the Rothschild Family.
 </font>
-<br><br><br>
+<br>
 
 <a href="https://politicsandwar.com/alliance/id=7399">Rothschild Family</a>
 <br>
