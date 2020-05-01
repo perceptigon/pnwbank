@@ -5,7 +5,8 @@
     <p style="text-align:center;padding-top:10px;"><img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:335.5px;height:300px;"><br> 
 <br>
 
-
+<tr>
+    <td>
 As one of the world's largest independent financial advisory groups, we offer a distinct perspective that makes a meaningful difference to our clients. business and wealth.
 <br>
 
@@ -27,6 +28,8 @@ We have many benefits that you won't see in any alliance, even the largest ones.
 That is because we are different with significantly more ambitious plans for our and this game's future. 
 <br><br>
 We are not just an alliance, we are the Rothschild Family.
+
+</td></tr>
 <br><br><br>
 
 <a href="https://politicsandwar.com/alliance/id=7399">Rothschild Family</a>
