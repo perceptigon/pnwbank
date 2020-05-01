@@ -25,7 +25,7 @@ That is because we are different with significantly more ambitious plans for our
 <u>We are not just an alliance, we are the <a href="https://politicsandwar.com/alliance/id=7399"><font color="black">Rothschild Family</font></a>.</u>
 </font>
 <br>
-<img src="{{ url("https://i.ibb.co/8dJ3MdN/imageedit-30-8983129268.png") }}" alt="Rothschild Wax Seal" style="width:50px;height:50px;">
+<img src="{{ url("https://i.ibb.co/8dJ3MdN/imageedit-30-8983129268.png") }}" alt="Rothschild Wax Seal" style="width:80px;height:80px;">
 
 <br>
 </p>                </fieldset>
