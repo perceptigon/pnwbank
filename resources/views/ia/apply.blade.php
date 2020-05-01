@@ -3,18 +3,15 @@
 @section('content')
 
     <p style="text-align:center;padding-top:10px;"><img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:335.5px;height:300px;"><br> 
-<br>
+<br><br>
 
 <font color="black">
 As one of the world's largest independent financial advisory groups, we offer a distinct perspective that makes a meaningful difference to our clients. business and wealth.
-<br>
-
-<br>
-
+<br><br><br>
 <u>Admission by invite-only.</u>
-<br><br>
+<br><br><br>
 Rothschild Family is a peaceful entity that conducts the best ethics policies in dealing with any threats that might impact the community.</font>
-<br></p>
+</p>
 <p style="text-align:center;padding-top:10px;font-style:italic;">
 <font color="black">Yes, my dear fellow, it all amounts to this: in order to do something first you must be something. We think Dante great, and he had a civilization of centuries behind him; the House of Rothschild is rich and it has required much more than one generation to attain such wealth. Such things all lie much deeper than one thinks.</font></p>
 <br><br>
