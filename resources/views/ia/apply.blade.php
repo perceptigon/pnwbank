@@ -11,7 +11,7 @@ As one of the world's largest independent financial advisory groups, we offer a 
 
 <br>
 
-Admission by invite-only.
+<u>Admission by invite-only.</u>
 <br><br>
 Rothschild Family is a peaceful entity that conducts the best ethics policies in dealing with any threats that might impact the community.</font>
 <br></p>
@@ -26,7 +26,7 @@ We aim towards profound business practices, best ethics policies while maintaini
 We have many benefits that you won't see in any alliance, even the largest ones. Including amazing community, trade deals with exponential trading web throughout the Orbis, automated banking to keep your funds safe at all times and other countless tools that make your membership like nowhere you have ever been. 
 That is because we are different with significantly more ambitious plans for our and this game's future. 
 <br><br>
-We are not just an alliance, we are the <a href="https://politicsandwar.com/alliance/id=7399"><font color="black">Rothschild Family</font></a>.
+<u>We are not just an alliance, we are the <a href="https://politicsandwar.com/alliance/id=7399"><font color="black">Rothschild Family</font></a>.</u>
 </font>
 <br>
 
