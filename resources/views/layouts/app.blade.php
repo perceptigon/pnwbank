@@ -15,7 +15,7 @@
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-            <a href="{{ url("/") }}" class="navbar-brand">Rothschilds & Co.{{ App::environment('local') ? "(Dev)" : "" }}</a><img src="https://i.ibb.co/4WJMJBJ/imageedit-1-2849241818.png" width="43" height="56" title="RnCo Logo" alt="RnCo Logo" />
+            <a href="{{ url("/") }}" class="navbar-brand">Rothschilds & Co.{{ App::environment('local') ? "(Dev)" : "" }}</a><img src="https://i.ibb.co/4WJMJBJ/imageedit-1-2849241818.png" width="38" height="49" title="RnCo Logo" alt="" />
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -24,7 +24,7 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url("/ia/") }}">Apply</a></li>
+                   
                     <li><a href="{{ url("/accounts") }}">Accounts</a></li>                      
                     <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Defense <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -35,7 +35,7 @@
                         </ul>
                     </li>
                 </ul>
-
+                <li><a href="{{ url("/ia/apply") }}">About</a></li>
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>
