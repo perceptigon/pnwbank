@@ -2,13 +2,12 @@
 
 @section('content')
 
-<style>
+
     h1 {text-align: center;}
     img {text-align: center;}
 <img src="https://i.ibb.co/T0MZqvH/imageedit-19-6358665258.png" width="300" height="223" title="Rothschilds & Co." alt="" />
 <h3>Welcome to the bank of Rothschild Family.</h3>
-</style>
-<img src="/images/image1.png" width="280" height="125" title="Logo of a company" alt="Logo of a company" />
+
 
 
     <div class="row">
