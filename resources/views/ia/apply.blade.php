@@ -3,7 +3,7 @@
 @section('content')
 
     <p style="text-align:center;padding-top:10px;"><img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:300px;height:269px;"><br> 
-<br>
+<br><br>
 
 <font color="black">
 As one of the world's largest independent financial advisory groups, we offer a distinct perspective that makes a meaningful difference to our clients. business and wealth.
@@ -24,7 +24,7 @@ That is because we are different with significantly more ambitious plans for our
 <br><br>
 <u>We are not just an alliance, we are the <a href="https://politicsandwar.com/alliance/id=7399"><font color="black">Rothschild Family</font></a>.</u>
 </font>
-<br>
+<br><br>
 <img src="{{ url("https://i.ibb.co/8dJ3MdN/imageedit-30-8983129268.png") }}" alt="Rothschild Wax Seal" style="width:100px;height:100px;">
 
 <br>
