@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+
+
+<img src="https://i.ibb.co/T0MZqvH/imageedit-19-6358665258.png" title="Rothschilds & Co." alt="" />
+<h1>Welcome to the bank of Rothschild Family.</h1>
+
+
+
     <div class="row">
         <div class="col-lg-6">
             <a href="{{ url("/ia/apply") }}" class="btn btn-xl btn-link homeButton">About</a>
