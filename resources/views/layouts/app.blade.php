@@ -15,7 +15,7 @@
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-            <img src="https://i.ibb.co/4WJMJBJ/imageedit-1-2849241818.png" width="43" height="56" title="RnCo Logo" alt="RnCo Logo" /><a href="{{ url("/") }}" class="navbar-brand">Rothschilds & Co.{{ App::environment('local') ? "(Dev)" : "" }}</a>
+            <a href="{{ url("/") }}" class="navbar-brand">Rothschilds & Co.{{ App::environment('local') ? "(Dev)" : "" }}</a><img src="https://i.ibb.co/4WJMJBJ/imageedit-1-2849241818.png" width="43" height="56" title="RnCo Logo" alt="RnCo Logo" />
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
