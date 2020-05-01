@@ -4,7 +4,6 @@
 
 <p style="text-align:center;padding-top:10px;">
 <img src="https://i.ibb.co/T0MZqvH/imageedit-19-6358665258.png" width="300" height="223" title="Rothschilds & Co." alt="" /></p>
-<h3 style:"text-align:center">Welcome to the bank of Rothschild Family.</h3>
 
 
 
