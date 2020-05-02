@@ -3,7 +3,7 @@
 @section('content')
 
 <p style="text-align:center;padding-top:10px;">
-<br><br><img src="https://i.ibb.co/T0MZqvH/imageedit-19-6358665258.png" width="480" height="357" title="Rothschilds & Co." alt="" /></p>
+<img src="https://i.ibb.co/T0MZqvH/imageedit-19-6358665258.png" width="300" height="223" title="Rothschilds & Co." alt="" /></p>
 
     <div class="row">
         <div class="col-lg-6">
