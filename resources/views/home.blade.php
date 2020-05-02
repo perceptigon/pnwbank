@@ -5,6 +5,9 @@
 <p style="text-align:center;padding-top:10px;">
 <img src="https://i.ibb.co/T0MZqvH/imageedit-19-6358665258.png" width="300" height="223" title="Rothschilds & Co." alt="" /></p>
 
+
+<?php echo date("D M d, Y G:i a"); ?>
+
     <div class="row">
         <div class="col-lg-6">
             <a href="{{ url("/ia/apply") }}" class="btn btn-xl btn-link homeButton">About</a>
