@@ -104,7 +104,7 @@
             </table>
         </div>
 
-        <hr><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
 
         <h4 class="text-center">All City Requirements</h4>
         <div class="table-responsive">
