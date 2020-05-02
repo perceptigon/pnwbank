@@ -40,7 +40,7 @@
 
 
 
-                    <li><a href="{{ url("") }}">RnCo Server Time <u><?php echo date("D M d, Y G:i a"); ?></u></a></li>
+                    <li><a href="{{ url("") }}">RnCo Server Time <u><?php echo date("l jS \of F Y h:i:s A"); ?></u></a></li>
 
                 </ul>
                
