@@ -38,13 +38,7 @@
 
 
 
-                    <?php $turnchange = <u><?php echo date("i"); ?></u>
 
-if ( $turnchange == "45" ) {
-	echo "It's TURN CHANGE!<br />";
-}
-echo "Do nothing!";
-?>
 
                     <li><a href="{{ url("") }}">RnCo Server Time <u><?php echo date("D M d, Y G:i a"); ?></u></a></li>
 
