@@ -18,7 +18,7 @@
  background-position: center;
 }
 nav {
-  background: #eee;
+  background: rgba(238, 238, 238, 0.438);
 }
 main {
   background: #f9f9f9;
