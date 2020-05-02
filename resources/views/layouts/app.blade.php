@@ -56,10 +56,10 @@
                             <ul class="dropdown-menu" role="menu">                           
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                                 <li><a href="{{ url('/user/dashboard') }}"><i class="fa fa-btn fa-sign-out"></i>Dashboard</a></li>
-                            </ul>     <li>>RnCo Server Time <?php echo date("D M d, Y G:i a"); ?></li>
+                            </ul>     
                         </li>
                     @endif
-                </ul>
+                </ul><li>RnCo Server Time <?php echo date("D M d, Y G:i a"); ?></li>
             </div>
         </div>
     </div>
