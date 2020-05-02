@@ -19,6 +19,7 @@
 }
 nav {
   background: rgba(238, 238, 238, 0.438);
+     max-width: inherit;
 }
 main {
   background: #f9f9f9;
