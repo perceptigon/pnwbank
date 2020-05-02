@@ -16,4 +16,5 @@
  background-repeat: no-repeat;
 background-position: center;
  background-color: #ffffff;
+   background-blend-mode: lighten;
 }
