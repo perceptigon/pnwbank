@@ -16,6 +16,7 @@
  background-repeat: repeat;
    max-width: inherit;
  background-position: center;
+   background-blend-mode:lighten;
 }
 nav {
   background: rgba(238, 238, 238, 0.438);
