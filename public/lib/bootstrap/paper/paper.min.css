@@ -16,14 +16,9 @@
  background-repeat: repeat;
    max-width: inherit;
  background-position: center;
-   background-blend-mode:lighten;
-}
-nav {
-  background: rgba(238, 238, 238, 0.438);
-     max-width: inherit;
 }
 main {
-  background: #f9f9f9;
+  background: #ffffff86;
 }
 aside {
   background: rgba(238, 238, 238, 0.418);
