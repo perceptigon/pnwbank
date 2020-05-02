@@ -14,8 +14,15 @@
   body {
  background-image: url("https://i.ibb.co/vjNSrbz/white-marble-stone-background-texture-pattern-picjumbo-com.jpg");
  background-repeat: repeat;
- background-color: #ffffff;
+   max-width: inherit;
  background-position: center;
-
-
+}
+nav {
+  background: #eee;
+}
+main {
+  background: #f9f9f9;
+}
+aside {
+  background: #eee;
 }
