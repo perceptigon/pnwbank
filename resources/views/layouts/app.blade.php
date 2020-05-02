@@ -36,7 +36,7 @@
                     </li>
                     <li><a href="{{ url("/ia/apply") }}">About</a></li>
 
-                    <li>RnCo Server Time <?php echo date("D M d, Y G:i a"); ?></li>
+                    <li><br> <br>RnCo Server Time <?php echo date("D M d, Y G:i a"); ?></li>
 
                 </ul>
                
