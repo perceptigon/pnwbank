@@ -5,23 +5,6 @@
 <p style="text-align:center;padding-top:10px;">
 <img src="https://i.ibb.co/T0MZqvH/imageedit-19-6358665258.png" width="300" height="223" title="Rothschilds & Co." alt="" /></p>
 
-<?php
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_HEADER, TRUE);
-curl_setopt($ch, CURLOPT_NOBODY, TRUE); // remove body
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-$head = curl_exec($ch); 
-?>
-
-
-<?php
-echo "Today is " . date("Y/m/d") . "<br>";
-echo "Today is " . date("Y.m.d") . "<br>";
-echo "Today is " . date("Y-m-d") . "<br>";
-echo "Today is " . date("l");
-?>
-
     <div class="row">
         <div class="col-lg-6">
             <a href="{{ url("/ia/apply") }}" class="btn btn-xl btn-link homeButton">About</a>
