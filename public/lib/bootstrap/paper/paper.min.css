@@ -5821,7 +5821,7 @@ button.close{
 }
 .btn-primary{
 	-webkit-background-size:200% 200%;
-	background-size:200%;
+	background-size:400%;
 	background-position:50%
 }
 .btn-primary:focus{
