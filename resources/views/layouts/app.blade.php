@@ -87,7 +87,7 @@
             @yield("content")
         </main>
         <footer>
-            <nav class="text-center"; style:"position:relative"; width:100%>
+            <nav class="text-center"; style:"position:absolute"; width:100%>
                 <a href="{{ url("/contact") }}">Contact</a>
                 @if (!Auth::guest() && Auth::user()->isAdmin)
                     <span class='badge'>{{ \App\Models\Contact::countPendReqs() ?? "" }}</span>
