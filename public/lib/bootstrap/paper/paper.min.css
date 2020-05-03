@@ -3558,6 +3558,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 }
 }
 .navbar-collapse{
+    background:#ffffffa2;
 	overflow-x:visible;
 	padding-right:15px;
 	padding-left:15px;
