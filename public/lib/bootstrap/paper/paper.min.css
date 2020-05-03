@@ -23,3 +23,11 @@ main {
 aside {
   background: rgba(238, 238, 238, 0.596);
 }
+
+#footer {
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    height:30px;
+    background:#ffffffa2;
+}
