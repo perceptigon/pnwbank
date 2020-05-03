@@ -3852,7 +3852,8 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 }
 .navbar-default{
 	background-color:#ffffffa2;
-	border-color:transparent
+	border-color:transparent;
+	position:absolute;
 }
 .navbar-default .navbar-brand{
 	color:#666666
@@ -4185,7 +4186,7 @@ a.label:hover,a.label:focus{
 	background-color:#00000062
 }
 .label-warning[href]:hover,.label-warning[href]:focus{
-	background-color:#00000062
+	background-color:#cc7a00
 }
 .label-danger{
 	background-color:#e51c23
