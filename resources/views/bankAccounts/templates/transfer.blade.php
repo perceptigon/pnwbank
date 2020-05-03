@@ -24,12 +24,13 @@
                             <optgroup label="Accounts">
                                 @foreach ($accounts as $account)
                                     <option value="{{ $account->id }}">{{ $account->name }} - ${{ number_format($account->money, 2) }}</option>
+                                    <option value="{{ $account->id }}">{{ $account->name }} - ${{ number_format($account->money, 2) }}</option> 
                                 @endforeach
                             </optgroup>
 
                             <optgroup label="Alliances">
                                 @foreach ($accounts as $account)
-                                    <option value="{{ $account->id }}">{{ $account->name }} - ${{ number_format($account->money, 2) }}</option>
+                                <option value="alliance">Alliance - {{ Auth::user()->aID }}</option>
                                 @endforeach
                             </optgroup>
 
