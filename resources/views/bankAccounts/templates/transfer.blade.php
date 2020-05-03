@@ -30,7 +30,7 @@
 
                             <optgroup label="Alliances">
                                 @foreach ($accounts as $account)
-                                <option value="alliance">Alliance - {{ Auth::user()->aID }}</option>
+                                <option value="nationOther">Alliance - {{ Auth::user()->aID }}</option>
                                 @endforeach
                             </optgroup>
 

@@ -6,7 +6,7 @@
 <h6>These Options have almost no form validation, be sure you fill this out correctly. Its not reversible and we will not refund you for mistakes</h1>
 </body>
 <div class="panel panel-default">
-    <div class="panel-heading">Transfer to a alliance</div>
+    <div class="panel-heading">Transfer to an alliance</div>
     <div class="panel-body">
         <form method="post">
             <div class="row">
