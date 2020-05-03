@@ -26,6 +26,13 @@
                                     <option value="{{ $account->id }}">{{ $account->name }} - ${{ number_format($account->money, 2) }}</option>
                                 @endforeach
                             </optgroup>
+
+                            <optgroup label="Alliances">
+                                @foreach ($accounts as $account)
+                                    <option value="{{ $account->id }}">{{ $account->name }} - ${{ number_format($account->money, 2) }}</option>
+                                @endforeach
+                            </optgroup>
+
                         </select>
                     </div>
                 </div>
