@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ App::environment('local') ? "(Dev)" : "" }}Rothschilds & Co.</title>
-
+    <title>{{ App::environment('local') ? "(Dev)" : "" }}RnCo</title>
     <link rel="stylesheet" href="{{ url("/lib/bootstrap/paper/paper.min.css") }}">
     <link rel="stylesheet" href="{{ url("/css/default.css") }}">
 
@@ -16,7 +15,7 @@
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <a href="{{ url("/") }}" class="navbar-brand">Rothschilds & Co. {{ App::environment('local') ? "(Dev)" : "" }}</a>
+            <a href="{{ url("/") }}" class="navbar-brand"><img src="https://i.ibb.co/qDhBYxh/imageedit-16-2201471897.png" width="50" height="50" title="RnCo Logo" alt="" /> Rothschilds & Co.{{ App::environment('local') ? "(Dev)" : "" }}</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -25,7 +24,7 @@
             </div>
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url("/ia/") }}">Apply</a></li>
+                   
                     <li><a href="{{ url("/accounts") }}">Accounts</a></li>                      
                     <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Defense <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -35,8 +34,16 @@
                             <li><a href="{{ url("/signin") }}">Sign In</a></li>
                         </ul>
                     </li>
-                </ul>
+                    <li><a href="{{ url("/ia/apply") }}">About</a></li>
 
+
+
+
+
+                    <li><a href="{{ url("") }}">RnCo Server Time <u><?php echo date("l jS \of F Y h:i:s A"); ?></u></a></li>
+
+                </ul>
+               
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>
@@ -53,7 +60,7 @@
                             <ul class="dropdown-menu" role="menu">                           
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                                 <li><a href="{{ url('/user/dashboard') }}"><i class="fa fa-btn fa-sign-out"></i>Dashboard</a></li>
-                            </ul>
+                            </ul>     
                         </li>
                     @endif
                 </ul>
