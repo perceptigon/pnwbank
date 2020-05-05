@@ -79,8 +79,8 @@ class TibernetController extends Controller
 	            <strong>Nation Link:</strong> <a href=\"https://politicsandwar.com/nation/id=$request->nation_ID\" rel=\"external nofollow\">https://politicsandwar.com/nation/id=$request->nation_ID</a><br>
 	            <strong>Previous alliances and Previous Positions:</strong> $request->prev_alliances<br>
 	            <strong>Have you done something to piss someone off in P&amp;W?:</strong> $request->pissed_off<br>
-                <strong>What skills can you offer Cam?:</strong> $request->skills<br>
-	            <strong>We are a military alliance, which means you will be required to stockpile a warchest (stockpile of resources and money) which will cut into your growth, are you okay with this?:</strong> $request->MMR
+                <strong>What skills can you offer RF?:</strong> $request->skills<br>
+	            <strong>We are a pixelhugger alliance, which means you will be required to stockpile a warchest (stockpile of resources and money) which will cut into your growth, are you okay with this?:</strong> $request->MMR
                 </p>";
 
             $forums = new Forums;
@@ -122,7 +122,7 @@ class TibernetController extends Controller
         switch ($status)
         {
             case "not_bk":
-                $this->output->addError("The nation you have entered is not a Rothschilds & Co. applicant. Please join BK in-game by going <a href=\"https://politicsandwar.com/alliance/id=7399\">here</a>, and try again.");
+                $this->output->addError("The nation you have entered is not a Rothschilds & Co. applicant. Please join RF in-game by going <a href=\"https://politicsandwar.com/alliance/id=7399\">here</a>, and try again.");
                 break;
             case "no_account":
                 $this->output->addError("There is no forum account associated with that nation id. Please make sure that the nation id you entered is correct, and make sure you have both created an account on the forums, and that you entered the proper nation id into your forum account's profile.");
