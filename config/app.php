@@ -30,7 +30,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application URL
+    | Application url
     |--------------------------------------------------------------------------
     |
     | This URL is used by the console to properly generate URLs when using
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'timezone' => 'America/New_York',
+    'timezone' => 'Etc/UTC',
 
     /*
     |--------------------------------------------------------------------------
