@@ -94,7 +94,7 @@
                 @endif
                      |
 
-<a href="https://www.rnco.uk/admin" target="_blank">Control Panel</a> 
+<a href="https://rnco.uk/admin" target="_blank">Control Panel</a> 
 |
 <a href="https://politicsandwar.com/alliance/id=7399" target="_blank">Rothschild Family</a> 
 |
