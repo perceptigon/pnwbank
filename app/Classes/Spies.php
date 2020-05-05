@@ -309,7 +309,7 @@ class Spies
             }
 
             $message .= "After completing the assignments, please submit your results by clicking the \"Submit Results\" link. Everything should be prefilled for you except results, but in case it isn't, the assignment ID is listed.\n";
-            $message .= "If you are confused about the system, or spying in general, please take a look at the [link=https://dev.bkpw.net/topic/7855-guide-war-time-spying/]guide on the forums[/link]. If you have an problems, contact Darth_Freer or Tiber on Discord.";
+            $message .= "If you are confused about the system, or spying in general, please take a look in RF discord. If you have an problems, contact Blackbird on Discord.";
 
             $client->sendMessage($attacker->nRuler, "Spy Operation Order", $message);
         }
