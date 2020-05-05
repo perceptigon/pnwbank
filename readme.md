@@ -1,3 +1,4 @@
-# BK's Bank System
+# RnCo's Bank System
 
-This is BK's Bank System. Ayy lmao
+This is the Rothschild Family's Bank System. 
+https://www.rnco.uk
