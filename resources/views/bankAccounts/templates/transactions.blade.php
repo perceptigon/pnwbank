@@ -25,7 +25,7 @@
                 <tbody>
                 @foreach($transactions as $tran)
                     <tr>
-                        <td>{{ $tran->created_at }}</td>
+                         <td>{{ $tran->created_at }}</td>
                         @if ($tran->fromAccount && $tran->fromAccountRel != null)
                             <td><a href="{{ url("/accounts/".$tran->fromAccountID) }}">{{ $tran->fromAccountRel->name}}</a></td>
                         @else
