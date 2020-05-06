@@ -548,7 +548,7 @@ class Verify
      */
     private function inBK() : bool
     {
-        if ($this->nation->aID != 7399)
+        if ($this->nation->aID = "")
         {
             array_push($this->errors, "You must be in The Rothschild Family in order to be eligible");
             $this->eligible = false;
