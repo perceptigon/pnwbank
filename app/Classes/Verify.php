@@ -1476,7 +1476,7 @@ class Verify
      */
     public function checkIfGreen() : bool
     {
-        if ($this->nation->color != "$Sea of Green")
+        if ($this->nation->color != "\$Sea of Green")
         {
             $this->eligible = false;
             array_push($this->errors, "Your color must be Green in order to be eligible");
