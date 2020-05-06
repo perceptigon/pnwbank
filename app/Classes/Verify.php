@@ -160,7 +160,7 @@ class Verify
             if (!($this->cityGrantNum <= 10))
             {
                 $this->checkCityTimers();
-                $this->checkIfBlack();
+                $this->checkIfGreen();
             }
 
             $this->checkWarchest($this->mmrReq);
@@ -194,7 +194,7 @@ class Verify
             $this->checkLoanAmount();
             $this->lastLoanCheck();
             $this->forumProfile = new ForumProfile($this->nation->nID);
-            $this->checkIfBlack();
+            $this->checkIfGreen();
         }
 
         if ($this->eligible)
@@ -241,7 +241,7 @@ class Verify
             $this->checkCityTimers();
             $this->checkIfGottenIDGrant();
             $this->checkIfPendingIDGrant();
-            $this->checkIfBlack();
+            $this->checkIfGreen();
         }
 
         if ($this->eligible)
@@ -267,7 +267,7 @@ class Verify
             $this->checkCityTimers();
             $this->checkIfGottenirondomeGrant();
             $this->checkIfPendingirondomeGrant();
-            $this->checkIfBlack();
+            $this->checkIfGreen();
         }
 
         if ($this->eligible)
@@ -289,7 +289,7 @@ class Verify
             if ($this->nation->exists && $this->inBK() && $this->notApplicant())
             {
 
-                $this->checkIfBlack();
+                $this->checkIfGreen();
             }
 
             if ($this->eligible)
@@ -316,7 +316,7 @@ class Verify
             $this->checkCityTimers();
             $this->checkIfGottenmlpGrant();
             $this->checkIfPendingmlpGrant();
-            $this->checkIfBlack();
+            $this->checkIfGreen();
         }
 
         if ($this->eligible)
@@ -345,7 +345,7 @@ class Verify
             $this->checkCityTimers();
             $this->checkIfGottennrfGrant();
             $this->checkIfPendingnrfGrant();
-            $this->checkIfBlack();
+            $this->checkIfGreen();
         }
 
         if ($this->eligible)
@@ -372,7 +372,7 @@ class Verify
             $this->checkCityTimers();
             $this->checkIfGottenpbGrant();
             $this->checkIfPendingpbGrant();
-            $this->checkIfBlack();
+            $this->checkIfGreen();
         }
 
         if ($this->eligible)
@@ -400,7 +400,7 @@ class Verify
             $this->checkCityTimers();
             $this->checkIfGottencceGrant();
             $this->checkIfPendingcceGrant();
-            $this->checkIfBlack();
+            $this->checkIfGreen();
         }
 
         if ($this->eligible)
@@ -419,7 +419,7 @@ class Verify
             $this->checkCityTimers();
             $this->checkIfGottenEGRGrant();
             $this->checkIfPendingEGRGrant();
-            $this->checkIfBlack();
+            $this->checkIfGreen();
             $this->checkGasRefineries();
             $this->cityAmount(2);
         }
@@ -438,7 +438,7 @@ class Verify
         {
             $this->checkIfHasNRF();
             $this->checkIfPendingNukeGrants();
-            $this->checkIfBlack();
+            $this->checkIfGreen();
             $this->cityAmount(19);
         }
 
@@ -468,7 +468,7 @@ class Verify
             $this->checkPendingActivity();
             $this->threshold = $activity->grant;
             $this->activityAmount = $activity->reward;
-            $this->checkIfBlack();
+            $this->checkIfGreen();
         }
 
         if ($this->eligible)
@@ -482,7 +482,7 @@ class Verify
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
             $this->checkPendingbauxite();
-            $this->checkIfBlack();
+            $this->checkIfGreen();
         }
 
         if ($this->eligible)
@@ -497,7 +497,7 @@ class Verify
         if ($this->nation->exists && $this->inBK() && $this->notApplicant())
         {
             $this->checkPendingOil();
-            $this->checkIfBlack();
+            $this->checkIfGreen();
             $this->checkGasRefineries();
             $this->cityAmount(2);
         }
@@ -524,7 +524,7 @@ class Verify
             if ($this->marketResource->resource != $request->resource) // We check this just incase they messed with the resource name. If they did, we'll invalidate it here
                 throw new \Exception("That resource doesn't exist");
             $this->checkMarketAmount($request->amount);
-            $this->checkIfBlack();
+            $this->checkIfGreen();
         }
 
         if ($this->eligible)
@@ -1470,13 +1470,13 @@ class Verify
     }
 
     /**
-     * Verifies that the nation is black
+     * Verifies that the nation is green
      *
      * @return bool
      */
-    public function checkIfBlack() : bool
+    public function checkIfGreen() : bool
     {
-        if ($this->nation->color !<> "Green")
+        if ($this->nation->color != "Green")
         {
             $this->eligible = false;
             array_push($this->errors, "Your color must be Green in order to be eligible");
