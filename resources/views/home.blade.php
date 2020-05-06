@@ -8,11 +8,18 @@
         <div class="col-lg-6">
             <a href="{{ url("/ia/apply") }}" class="btn btn-xl btn-link homeButton">About</a>
         </div>
+
         <div class="col-lg-6">
             <a href="{{ url("https://politicsandwar.fandom.com/wiki/Rothschild_Family") }}" class="btn btn-xl btn-link homeButton">Wiki</a>
         </div>
         <div class="col-lg-6">
             <a href="{{ url("/accounts") }}" class="btn btn-xl btn-link homeButton">Accounts</a>
+        </div>
+        <div class="col-lg-6">
+            <a href="{{ url("/user/dashboard") }}" class="btn btn-xl btn-link homeButton">Dashboard</a>
+        </div>
+        <div class="col-lg-6">
+            <a href="{{ url("/loans") }}" class="btn btn-xl btn-link homeButton">Loans</a>
         </div>
         <div class="col-lg-6">
             <a href="{{ url("/defense/dashboard") }}" class="btn btn-xl btn-link homeButton">Defense</a>

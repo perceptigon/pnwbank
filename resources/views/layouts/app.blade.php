@@ -25,7 +25,8 @@
             <div class="navbar-collapse collapse" id="navbar-main">
                 <ul class="nav navbar-nav">
                    
-                    <li><a href="{{ url("/accounts") }}">Accounts</a></li>                      
+                    <li><a href="{{ url("/accounts") }}">Accounts</a></li>    
+                    <li><a href="{{ url("/loans") }}">Loans</a></li>                  
                     <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Defense <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             @if (Auth::check())
