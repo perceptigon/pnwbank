@@ -28,7 +28,7 @@
                     <li><a href="{{ url("/accounts") }}">Accounts</a></li>              
                     <li><a href="{{ url("/ia/apply") }}">About</a></li>
 
-                    <li><a href="{{ url("") }}"></a></li>
+                    <li><a href="{{ url("/ia/apply") }}"></a></li>
 
 
 
