@@ -8,7 +8,7 @@
     <title>{{ App::environment('local') ? "(Dev)" : "" }}RnCo</title>
     <link rel="stylesheet" href="{{ url("/lib/bootstrap/paper/paper.min.css") }}">
     <link rel="stylesheet" href="{{ url("/css/default.css") }}">
-
+    
     @yield("headScripts")
     </head>
     <body>
