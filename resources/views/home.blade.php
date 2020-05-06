@@ -3,7 +3,7 @@
 @section('content')
 
 <p style="text-align:center;padding-top:10px;">
-<img src="https://i.ibb.co/CKfBGjW/imageedit-1-8652517477.png" width="330" height="245" title="Rothschilds & Co." alt="" /></p>
+<img src="https://i.ibb.co/CKfBGjW/imageedit-1-8652517477.png" width="300" height="200.5" title="Rothschilds & Co." alt="" /></p>
     <div class="row">
         <div class="col-lg-6">
             <a href="{{ url("/ia/apply") }}" class="btn btn-xl btn-link homeButton">About</a>
