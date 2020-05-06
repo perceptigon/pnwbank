@@ -8,14 +8,14 @@
     <title>{{ App::environment('local') ? "(Dev)" : "" }}RnCo</title>
     <link rel="stylesheet" href="{{ url("/lib/bootstrap/paper/paper.min.css") }}">
     <link rel="stylesheet" href="{{ url("/css/default.css") }}">
-    
+
     @yield("headScripts")
     </head>
     <body>
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-            <a href="{{ url("/") }}" class="navbar-brand"><img src="https://i.ibb.co/3R9N29G/imageedit-3-7630138711.png" width="70" height="50" title="RnCo Logo" alt="" /> Rothschilds & Co.{{ App::environment('local') ? "(Dev)" : "" }}</a>
+            <a href="{{ url("/") }}" class="navbar-brand"><img src="https://i.ibb.co/qDhBYxh/imageedit-16-2201471897.png" width="50" height="50" title="RnCo Logo" alt="" /> Rothschilds & Co.{{ App::environment('local') ? "(Dev)" : "" }}</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
