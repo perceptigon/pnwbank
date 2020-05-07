@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ App::environment('local') ? "(Dev)" : "" }}RnCo</title>
+    <title>{{ App::environment('local') ? "(Dev)" : "" }}Banque Lumiere</title>
     <link rel="stylesheet" href="{{ url("/lib/bootstrap/paper/paper.min.css") }}">
     <link rel="stylesheet" href="{{ url("/css/default.css") }}">
 
