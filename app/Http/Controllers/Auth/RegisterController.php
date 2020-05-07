@@ -65,7 +65,7 @@ class RegisterController extends Controller
             {
                 $nation = new Nation($data["nID"]);
 
-                if ($nation->aID != 7399)
+                if ($nation->aID = "")
                     $validator->errors()->add('field', "That nation isn't in The Rothschild Family");
 
                 if ($nation->alliancePosition == 1)
