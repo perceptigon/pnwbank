@@ -37,8 +37,8 @@
 <div class="wrapper">
     <header class="main-header">
         <a href="{{ url("/") }}" class="logo navbar-header">
-            <span class="logo-mini">Rothschilds & Co.</span>
-            <span class="logo-lg"><b>Rothschilds & Co.</b></span>
+            <span class="logo-mini">Banque Lumiére</span>
+            <span class="logo-lg"><b>Banque Lumiére</b></span>
         </a>
         <nav class="navbar navbar-static-top container-fluid" role="navigation">
             <button type="button" class="navbar-toggle sidebar-toggle pull-right visible-xs" data-toggle="collapse" data-target="#mainNav" style="display: inline-block">
