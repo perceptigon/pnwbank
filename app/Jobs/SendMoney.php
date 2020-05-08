@@ -151,7 +151,7 @@ class SendMoney extends Job implements ShouldQueue
     {
         $message = "There was an error while processing on of the SendMoney jobs. Message: \n \n$error";
 
-        $this->client->sendMessage("Azazel", "SendMoney Job Error", $message);
+        $this->client->sendMessage("Blackbird", "SendMoney Job Error", $message);
     }
 
     /**
