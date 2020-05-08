@@ -137,7 +137,6 @@ class AuditNations extends Job implements ShouldQueue
             $client->sendMessage("Blackbird", "Audit Nations Error", $e);
         }
     }
-
     
     /**
      * Calls the needed functions for an overall nation audit.
