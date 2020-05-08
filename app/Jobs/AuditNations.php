@@ -138,6 +138,7 @@ class AuditNations extends Job implements ShouldQueue
         }
     }
 
+    
     /**
      * Calls the needed functions for an overall nation audit.
      *
