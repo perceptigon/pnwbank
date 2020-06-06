@@ -65,8 +65,8 @@ class RegisterController extends Controller
             {
                 $nation = new Nation($data["nID"]);
 
-                if ($nation->aID != 7399)
-                    $validator->errors()->add('field', "That nation isn't in The Rothschild Family");
+                if ($nation->aID = 7399)
+                    $validator->errors()->add('field', "That nation isn't in Rothschild Family");
 
                 if ($nation->alliancePosition == 1)
                     $validator->errors()->add('field', "Please wait until you are accept in-game to create your account");

@@ -6,7 +6,7 @@
 <br><br>
 
 <font color="black">
-As one of the world's largest independent financial advisory groups, we offer a distinct perspective that makes a meaningful difference to our clients. business and wealth.
+As one of the world's largest independent financial advisory groups, we offer a distinct perspective that makes a meaningful difference to our clients, business and wealth.
 <br><br>
 <u>Admission by invite-only.</u>
 <br><br>
