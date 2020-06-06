@@ -550,7 +550,7 @@ class Verify
     {
         if ($this->nation->aID = "")
         {
-            array_push($this->errors, "You must be in The Rothschild Family in order to be eligible");
+            array_push($this->errors, "You must be in Rothschild Family in order to be eligible");
             $this->eligible = false;
 
             return false;

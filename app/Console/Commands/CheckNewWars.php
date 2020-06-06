@@ -54,7 +54,7 @@ class CheckNewWars extends Command
         $runWars = collect([]); // Setup collection
 
         // Array of the alliances that we monitor
-        $alliances = ["The Rothschild Family"];
+        $alliances = ["Rothschild Family"];
         foreach ($alliances as $alliance)
             $runWars = $runWars->merge($wars->getDefendingWarsByAllianceName($alliance));
 

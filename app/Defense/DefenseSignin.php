@@ -69,7 +69,7 @@ class DefenseSignin extends Model
         $profile = DefenseProfiles::getProfile($request->nID);
 
         if ($nation->aID != 7399)
-            throw new \Exception("You are not in The Rothschild Family");
+            throw new \Exception("You are not in Rothschild Family");
         if ($nation->alliancePosition < 2)
             throw new \Exception("Applicants do not need to sign in");
         // Now to check the 24 hour rule

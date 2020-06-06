@@ -61,7 +61,7 @@ class Tibernet
      */
     public static function status(string $forum_name, int $forum_id, Nation $nation)
     {
-        if ($nation->alliance != 'The Rothschild Family')
+        if ($nation->alliance != 'Rothschild Family')
             return 'not_bk';
         elseif ($forum_id < 1600)
             return 'too_old';

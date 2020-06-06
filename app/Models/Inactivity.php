@@ -88,7 +88,7 @@ class Inactivity extends Model
                 continue;
             }
 
-            if ($nation->aID != 7399) // Nation is not in The Rothschild Family
+            if ($nation->aID != 7399) // Nation is not in Rothschild Family
             {
                 $this->isInactive = false;
                 $this->save();
