@@ -69,7 +69,7 @@ class RegisterController extends Controller
                     $validator->errors()->add('field', "That nation isn't in Rothschild Family");
 
                 if ($nation->alliancePosition == 1)
-                    $validator->errors()->add('field', "Please wait until you are accept in-game to create your account");
+                    $validator->errors()->add('field', "Please wait until you are accepted in-game to create your account");
             }
             catch (\Exception $e)
             {
