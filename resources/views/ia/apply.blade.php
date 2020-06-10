@@ -3,7 +3,7 @@
 @section('content')
 <p style="text-align:center;padding-top:10px;">
 <a href="https://discord.gg/ZmBSJnJ"><img src="{{ url("https://i.ibb.co/yhLZcrk/4wb14iea8olt.png") }}" alt="Join Banque Lumiére Discord server" style="width:204px;height:51px;"></a>
-
+<br>
 <img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:300px;height:269px;"><br> 
 <br><br>
 
