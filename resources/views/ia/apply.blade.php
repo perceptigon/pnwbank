@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-
+<p style="text-align:center;padding-top:10px;">
 <a href="https://discord.gg/ZmBSJnJ"><font color="black">Join Discord</font></a>
 
-    <p style="text-align:center;padding-top:10px;"><img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:300px;height:269px;"><br> 
+<img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:300px;height:269px;"><br> 
 <br><br>
 
 <font color="black">
