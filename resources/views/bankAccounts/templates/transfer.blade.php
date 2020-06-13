@@ -33,6 +33,7 @@
                                     <option value="897"> Factorian Kallio - Austrian Resource Bank</option> 
                                     <option value="922"> Whizzy - Savings account 1</option> 
                                     <option value="903"> Naruu - Frosties magical money printer</option> 
+                                    <option value="927"> Sovereign Wealth Fund</option> 
 
                         </select>
                     </div>
