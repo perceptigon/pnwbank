@@ -3,15 +3,15 @@
 @section('content')
 <p style="text-align:center;padding-top:10px;">
 <a href="https://discord.gg/ZmBSJnJ"><img src="{{ url("https://i.ibb.co/p6D7NpS/imageedit-7-2438352295.png") }}" alt="Join Banque Lumiére Discord server" style="width:283px;height:71px;"></a>
+<br><br>
+Banque Lumiére prides itself in being the technologically most advanced bank in all of Orbis. 
+With our automated banking system customers can access their funds anytime and wherever, without any help of a banker.
+Aside from our unique banking system, we also offer amazing financial products to meet your various expectations either as an alliance, a normal player or even a trader, we have just the product that's suitable for you.
 <br><br><br>
 <img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:300px;height:269px;"><br> 
 <br><br>
 
 <font color="black">
-Banque Lumiére prides itself in being the technologically most advanced bank in all of Orbis. 
-With our automated banking system customers can access their funds anytime and wherever, without any help of a banker.
-Aside from our unique banking system, we also offer amazing financial products to meet your various expectations either as an alliance, a normal player or even a trader, we have just the product that's suitable for you.
-<br><br>
 As one of the world's largest independent financial advisory groups, we offer a distinct perspective that makes a meaningful difference to our clients, business and wealth.
 <br><br>
 <u>Admission by invite-only.</u>
