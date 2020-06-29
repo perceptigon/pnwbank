@@ -7,7 +7,7 @@
 Banque Lumiére prides itself in being the technologically most advanced bank in all of Orbis. 
 With our automated banking system customers can access their funds anytime and wherever, without any help of a banker.
 Aside from our unique banking system, we also offer amazing financial products to meet your various expectations either as an alliance, a normal player or even a trader, we have just the product that's suitable for you.
-<br><br><br>
+<br><br>
 <img src="{{ url("https://i.ibb.co/VxRQxMZ/imageedit-2-4291056806.png") }}" alt="Rothschild Family logo" style="width:300px;height:269px;"><br> 
 <br><br>
 
