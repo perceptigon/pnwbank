@@ -32,7 +32,17 @@
 
 
 
-                    <li><a href="{{ url("") }}">RnCo Server Time <u><?php echo date("l jS \of F Y h:i:s A"); ?></u></a></li>
+                    <?php
+$t = date("i");
+
+if ($t < "05") {
+  echo '<li><a href="{{ url("") }}"><strong><font color=\"red\">A turn is in progress.</strong> Transactions won\'t work. Time <u>' . date("h:i:s A") . '</u></font></a></li>';
+} elseif ($t > "39") {
+  echo '<li><a href="{{ url("") }}"><strong><font color=\"red\">A turn is in progress.</strong> Transactions won\'t work. Time <u>' . date("h:i:s A") . '</u></font></a></li>';
+} else {
+  echo '<li><a href="{{ url("") }}">RnCo Server Time <u> . date("l jS \of F Y h:i:s A") . </u></a></li>';
+}
+?>
 
                 </ul>
                
