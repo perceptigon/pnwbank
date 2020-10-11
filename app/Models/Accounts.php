@@ -425,7 +425,8 @@ class Accounts extends Model
             "accountID" => $this->id,
             "code" => $code,
         ]);
-        echo"Please use the following code:$code. Link: https://politicsandwar.com/alliance/id=7399&display=bank#deposit";
+        echo"Please use the following code:$code. Link: 
+        https://politicsandwar.com/alliance/id=7399&display=bank#deposit";
         dispatch(new CreateDepositRequest($deposit));
     }
 
