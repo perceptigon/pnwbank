@@ -426,7 +426,7 @@ class Accounts extends Model
             "code" => $code,
         ]);
         $link_address = 'https://politicsandwar.com/alliance/id=7399&display=bank#deposit';
-        echo"Please use the following code:$code. <a href='$link_address'>Link to deposit</a>";
+        echo"Please use the following code:$code. <a href='$link_address' target='_blank' rel='noopener noreferrer'>Link to deposit</a>";
         dispatch(new CreateDepositRequest($deposit));
     }
 
