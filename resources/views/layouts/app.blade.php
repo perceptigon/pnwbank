@@ -32,18 +32,19 @@
 
 
 
-                    <?php
+                    
 $t = date("i");
 
-if ($t < "05") {
-  echo '<li><a href="{{ url(\"\") }}"><strong><font color=\"E60000\">A turn is in progress!</strong> Transactions won\'t work. Time <u>' . date("h:i:s A") . '</u></font></a></li>';
-} elseif ($t > "39") {
-  echo '<li><a href="{{ url(\"\") }}"><strong><font color=\"E60000\">A turn is in progress!</strong> Transactions won\'t work. Time <u>' . date("h:i:s A") . '</u></font></a></li>';
-} else {
-  echo '<li><a href="{{ url(\"\") }}">RnCo Server Time <u>' . date("l jS \of F Y h:i:s A") . '</u></a></li>';
-}
-?>
-
+@if ($t < "05") 
+  <li><a href="{{ url("\") }}"><font color="E60000"><strong>A turn is in progress!</strong> Transactions wont work. Time <u> . date("h:i:s A") . </u></font></a></li>
+ @else 
+    @if($t > "55") {
+  <li><a href="{{ url("\") }}"><font color="E60000"><strong>A turn is in progress!</strong> Transactions wont work. Time <u> . date("h:i:s A") . </u></font></a></li>
+ @else
+        @if
+  <li><a href="{{ url("\") }}">RnCo Server Time <u> . date("l jS \of F Y h:i:s A") . </u></a></li>
+        @endif
+       
                 </ul>
                
                 <ul class="nav navbar-nav navbar-right">
