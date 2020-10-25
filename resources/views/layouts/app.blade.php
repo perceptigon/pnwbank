@@ -36,11 +36,11 @@
 $t = date("i");
 
 if ($t < "05") {
-  echo '<li><a href="{{ url("\") }}"><strong><font color=\"E60000\">A turn is in progress!</strong> Transactions won\'t work. Time <u>' . date("h:i:s A") . '</u></font></a></li>';
+  echo "<li><a href="{{ url(\"\") }}"><strong><font color=\"E60000\">A turn is in progress!</strong> Transactions won\'t work. Time <u>" . date("h:i:s A") . '</u></font></a></li>';
 } elseif ($t > "39") {
-  echo '<li><a href="{{ url("\") }}"><strong><font color=\"E60000\">A turn is in progress!</strong> Transactions won\'t work. Time <u>' . date("h:i:s A") . '</u></font></a></li>';
+  echo "<li><a href="{{ url(\"\") }}"><strong><font color=\"E60000\">A turn is in progress!</strong> Transactions won\'t work. Time <u>" . date("h:i:s A") . '</u></font></a></li>';
 } else {
-  echo '<li><a href="{{ url("\") }}">RnCo Server Time <u>' . date("l jS \of F Y h:i:s A") . '</u></a></li>';
+  echo "<li><a href="{{ url(\"\") }}">RnCo Server Time <u>" . date("l jS \of F Y h:i:s A") . '</u></a></li>';
 }
 ?>
 
@@ -48,8 +48,8 @@ if ($t < "05") {
                
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        <li><a href="{{ url("/login") }}">Login</a></li>
+                        <li><a href="{{ url("/register") }}">Register</a></li>
                     @else
                         @if (Auth::user()->isAdmin)
                             <li><a href="{{ url("/admin") }}">Admin <span class="badge">{{ \App\Classes\Output::countPendingReqs() ?? "" }}</span></a></li>
@@ -96,7 +96,7 @@ if ($t < "05") {
                 @endif
                      |
 
-<a href="https://rnco.uk/admin" target="_blank">Control Panel</a> 
+<a href="https://banque-lumiere.rnco.uk/admin" target="_blank">Control Panel</a> 
 |
 <a href="https://politicsandwar.com/alliance/id=7399" target="_blank">Rothschild Family</a> 
 |
