@@ -213,7 +213,7 @@ class Accounts extends Model
             return false;
 
         // Setup message
-        $message = "Hi $nation->leader,\n\n This message is being sent to you to confirm your successful withdraw from {$this->name}\n\n";
+        $message = "Hi $nation->leader,\n\n This message is being sent to you to confirm your successful withdrawn from {$this->name}\n\n";
 
         foreach ($resources as $res)
         {
@@ -298,7 +298,7 @@ class Accounts extends Model
             return false;
 
         // Setup message
-        $message = "Hi $nation->leader,\n\n This message is being sent to you to confirm your successful withdraw from {$this->name}\n\n";
+        $message = "Hi $nation->leader,\n\n This message is being sent to you to confirm your successful withdrawn from {$this->name}\n\n";
 
         foreach ($resources as $res)
         {
@@ -327,7 +327,7 @@ class Accounts extends Model
         return true;
     }
     /**
-     * Transfer stuff to a alliance
+     * Transfer stuff to an alliance
      *
      * @param Request $request
      * @return bool
@@ -384,7 +384,7 @@ class Accounts extends Model
             return false;
 
         // Setup message
-        $message = "Hi $nation->leader,\n\n This message is being sent to you to confirm your successful withdraw from {$this->name}\n\n";
+        $message = "Hi $nation->leader,\n\n This message is being sent to you to confirm your successful withdrawn from {$this->name}\n\n";
 
         foreach ($resources as $res)
         {
