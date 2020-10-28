@@ -45,7 +45,7 @@
     </div>
     @include("bankAccounts.templates.deposit")
     @include("bankAccounts.templates.transactions")
-    @if (Auth::user()->isAdmin && Gate::allows("accounts") && 
+    @if (Auth::user()->isAdmin && Gate::allows("accounts") && $account->nID != Auth::user()->nID)
         @include("bankAccounts.templates.edit")
     @endif
 @endsection
