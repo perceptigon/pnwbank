@@ -481,8 +481,8 @@ class Accounts extends Model
         if (Gate::denies("accounts"))
             throw new UserErrorException("You don't have permission to edit accounts");
 
-        if ($this->nID == Auth::user()->nID)
-            throw new UserErrorException("You can't edit your own accounts");
+        //if ($this->nID == Auth::user()->nID)
+          //  throw new UserErrorException("You can't edit your own accounts");
 
         $total = 0; // Used later to determine if anything is actually changing
 
