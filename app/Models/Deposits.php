@@ -25,6 +25,6 @@ class Deposits extends Model
      */
     public static function getActiveDeposits()
     {
-        return self::where("pending", true)->get();
+        return self::where("", false)->get();
     }
 }
