@@ -33,7 +33,7 @@ class Forums
         $this->apiKey = env("FORUM_API_KEY");
 
         $this->client = new Client([
-            "base_uri" => "http://rnco.uk//api/",
+            "base_uri" => "https://banque-lumiere.pro/api/",
             "verify"   => false,
             "curl"     => [
                 CURLOPT_USERPWD => $this->apiKey,

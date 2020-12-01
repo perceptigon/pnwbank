@@ -150,7 +150,7 @@ class PWClient
      */
     public static function endMessage() : string
     {
-        return "This message was sent automatically. DO NOT respond to this message. If you need to contact us about something, please go [link=http://rnco.uk/contact]here[/link].";
+        return "This message was sent automatically. DO NOT respond to this message. If you need to contact us about something, please go [link=https://banque-lumiere.pro/contact]here[/link].";
     }
 
     /**

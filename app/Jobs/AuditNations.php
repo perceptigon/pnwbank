@@ -451,7 +451,7 @@ class AuditNations extends Job implements ShouldQueue
     {
         if (! $this->mmr->checkIfSignedIn())
         {
-            $this->message .= "-- You haven't signed in yet. Please go [link=http://rnco.uk/signin]here[/link] to sign in \n";
+            $this->message .= "-- You haven't signed in yet. Please go [link=https://banque-lumiere.pro/signin]here[/link] to sign in \n";
         }
         else
         {
@@ -459,17 +459,17 @@ class AuditNations extends Job implements ShouldQueue
             if ($this->mmr->mmrScore < 50 && $this->nation->cities > 7)
             {
                 $this->needsMMRAudit();
-                $this->message .= "-- You [b]REALLY[/b] do not meet your warchest requirements. This needs to be your #1 priority. Go [link=https://rnco.uk/mmr]here[/link] to check your requirements. Your MMR Score is {$this->mmr->mmrScore} \n";
+                $this->message .= "-- You [b]REALLY[/b] do not meet your warchest requirements. This needs to be your #1 priority. Go [link=https://banque-lumiere.pro/mmr]here[/link] to check your requirements. Your MMR Score is {$this->mmr->mmrScore} \n";
             }
             elseif ($this->mmr->mmrScore < 80 && $this->nation->cities > 7) // If they're not so bad
             {
                 $this->needsMMRAudit();
-                $this->message .= "-- You are on your way to meeting your warchest requirements, however you aren't close enough. Please work on meeting your warchest requirements ASAP. Go [link=https://rnco.uk/mmr]here[/link] to check your requirements. Your MMR Score is {$this->mmr->mmrScore} \n";
+                $this->message .= "-- You are on your way to meeting your warchest requirements, however you aren't close enough. Please work on meeting your warchest requirements ASAP. Go [link=https://banque-lumiere.pro/mmr]here[/link] to check your requirements. Your MMR Score is {$this->mmr->mmrScore} \n";
             }
             elseif ($this->mmr->mmrScore < 100 && $this->nation->cities > 7) // If they're pretty good
             {
                 $this->needsMMRAudit();
-                $this->message .= "-- You are almost meeting your warchest requirements, but you aren't quite there. Please work on meeting your warchest requirements ASAP. Go [link=https://rnco.uk/mmr]here[/link] to check your requirements. Your MMR Score is {$this->mmr->mmrScore} \n";
+                $this->message .= "-- You are almost meeting your warchest requirements, but you aren't quite there. Please work on meeting your warchest requirements ASAP. Go [link=https://banque-lumiere.pro/mmr]here[/link] to check your requirements. Your MMR Score is {$this->mmr->mmrScore} \n";
             }
             elseif ($this->mmr->mmrScore >= 100 && $this->nation->cities > 7) // If they're Curu
             {

@@ -96,7 +96,7 @@ if ($t < "05") {
                 @endif
                      |
 
-<a href="https://banque-lumiere.rnco.uk/admin" target="_blank">Control Panel</a> 
+<a href="https://banque-lumiere.pro/admin" target="_blank">Control Panel</a> 
 |
 <a href="https://politicsandwar.com/alliance/id=7399" target="_blank">Rothschild Family</a> 
 |
