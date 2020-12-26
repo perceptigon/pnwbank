@@ -53,6 +53,8 @@
     	<table class="table table-hover table-striped">
     		<tr>
     			<td>Timestamp</td>
+				<td>Nation ID</td>
+				<td>Discord username</td>
     			<td>Leader</td>
     			<td>Message</td>
     			<td>Status</td>
