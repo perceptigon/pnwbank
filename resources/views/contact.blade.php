@@ -9,9 +9,9 @@
 
           
 
-<label for="discord">Your Discord username</label>
+<label for="discord">Discord username: </label>
                     <input type="text" name="discord" id="discord" class="form-control" required @if (Auth::check()) value="{{ Auth::user()->discord }}" @endif>
-					<span class="help-block">Discord Username: <u>including</u> the digits after the hashtag. EX: Blackbird<strong>#0001</strong></span>
+					<span class="help-block">Your Discord Username <u>including</u> the digits after the hashtag. EX: Blackbird<strong>#0001</strong></span>
 					<label for="nID">Your Nation ID: </label>
                     <input type="number" name="nID" id="nID" class="form-control" required @if (Auth::check()) value="{{ Auth::user()->nID }}" @endif>
 
