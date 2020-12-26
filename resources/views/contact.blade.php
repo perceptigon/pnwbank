@@ -32,7 +32,7 @@
                                 <strong>{{ $errors->first('nID') }}</strong>
                             </span>
                         @endif
-                        <span class="help-block">The Discord Username with the digits after hashtag. EX: Blackbird<strong>#0001</strong></span>
+                        <span class="help-block">The Discord Username <u>including</u> the digits after hashtag. EX: Blackbird<strong>#0001</strong></span>
                     </div>
                 </div>
 
