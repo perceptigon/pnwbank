@@ -22,7 +22,7 @@
                         <span class="help-block">The Discord Username <u>including</u> the digits after the hashtag. EX: Blackbird<strong>#0001</strong></span>
                     </div>
                 </div>
-
+<br>
 				<label for="nID">Your Nation ID</label>
                     <input type="text" name="nID" id="nID" class="form-control" required @if (Auth::check()) value="{{ Auth::user()->nID }}" @endif>
 
