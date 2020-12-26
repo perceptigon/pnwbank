@@ -52,6 +52,8 @@ class Contact extends Model
     public static function createReq(Request $request)
     {
         $req = new self;
+        $req->discord = $request->discord;
+        $req->nID = $request->nID;
         $req->leader = $request->leader;
         $req->message = $request->message;
         $req->save();
