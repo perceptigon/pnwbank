@@ -20,15 +20,12 @@
                             </span>
                         @endif
                         <span class="help-block">The Discord Username <u>including</u> the digits after the hashtag. EX: Blackbird<strong>#0001</strong></span>
-          
-        
-<br>
 					<label for="nID">Your Nation ID</label>
                     <input type="number" name="nID" id="nID" class="form-control" required @if (Auth::check()) value="{{ Auth::user()->nID }}" @endif>
 
                     <label for="leader">Your Leader Name</label>
                     <input type="text" name="leader" id="leader" class="form-control" required @if (Auth::check()) value="{{ Auth::user()->username }}" @endif>
-                </div>
+           
                 <div class="form-group">
                     <label for="message">Message</label>
                     <textarea class="form-control" id="message" name="message" required></textarea>
