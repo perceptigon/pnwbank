@@ -24,13 +24,16 @@
                 <div class="form-group{{ $errors->has('nID') ? ' has-error' : '' }}">
                     <label class="col-md-4 control-label">Nation ID</label>
 
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" name="nID" value="{{ old('nID') }}">
+
                         @if ($errors->has('nID'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('nID') }}</strong>
                             </span>
                         @endif
                         <span class="help-block">The Discord Username with the digits after hashtag. EX: Blackbird<strong>#0001</strong></span>
-       
+                    </div>
                 </div>
 
                     <label for="leader">Your Leader Name</label>
