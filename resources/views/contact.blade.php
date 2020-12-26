@@ -29,7 +29,7 @@
 
                         @if ($errors->has('Discord'))
                             <span class="help-block">
-                                <strong>{{ $errors->first('nID') }}</strong>
+                                <strong>{{ $errors->first('Discord') }}</strong>
                             </span>
                         @endif
                         <span class="help-block">The Discord Username <u>including</u> the digits after the hashtag. EX: Blackbird<strong>#0001</strong></span>
