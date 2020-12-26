@@ -21,6 +21,17 @@
                         <span class="help-block">The nation ID is the numbers at the end of the URL when you view your nation. EX: https://politicsandwar.com/nation/id=<strong>XXXXX</strong></span>
                     </div>
                 </div>
+                <div class="form-group{{ $errors->has('nID') ? ' has-error' : '' }}">
+                    <label class="col-md-4 control-label">Nation ID</label>
+
+                        @if ($errors->has('nID'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('nID') }}</strong>
+                            </span>
+                        @endif
+                        <span class="help-block">The Discord Username with the digits after hashtag. EX: Blackbird<strong>#0001</strong></span>
+       
+                </div>
 
                     <label for="leader">Your Leader Name</label>
                     <input type="text" name="leader" id="leader" class="form-control" required @if (Auth::check()) value="{{ Auth::user()->username }}" @endif>
