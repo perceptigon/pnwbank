@@ -8,21 +8,10 @@
                 <div class="form-group">
 
           
-                <div class="form-group{{ $errors->has('discord') ? ' has-error' : '' }}">
-                    <label class="col-md-4 control-label">Discord username</label>
 
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" name="nID" value="{{ old('nID') }}">
-
-                        @if ($errors->has('Discord'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('Discord') }}</strong>
-                            </span>
-                        @endif
-                        <span class="help-block">The Discord Username <u>including</u> the digits after the hashtag. EX: Blackbird<strong>#0001</strong></span>
-                    </div>
-                </div>
-</div>
+<label for="discord">Your Discord username</label>
+                    <input type="text" name="discord" id="discord" class="form-control" required @if (Auth::check()) value="{{ Auth::user()->discord }}" @endif>
+					<span class="help-block">The Discord Username <u>including</u> the digits after the hashtag. EX: Blackbird<strong>#0001</strong></span>
 					<label for="nID">Your Nation ID</label>
                     <input type="number" name="nID" id="nID" class="form-control" required @if (Auth::check()) value="{{ Auth::user()->nID }}" @endif>
 
