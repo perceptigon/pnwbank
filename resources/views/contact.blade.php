@@ -36,6 +36,9 @@
                     </div>
                 </div>
 
+				<label for="nID">Your Nation ID</label>
+                    <input type="text" name="nID" id="nID" class="form-control" required @if (Auth::check()) value="{{ Auth::user()->nID }}" @endif>
+
                     <label for="leader">Your Leader Name</label>
                     <input type="text" name="leader" id="leader" class="form-control" required @if (Auth::check()) value="{{ Auth::user()->username }}" @endif>
                 </div>
