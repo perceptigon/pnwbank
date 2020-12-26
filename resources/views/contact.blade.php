@@ -62,6 +62,8 @@
     		@foreach ($pendReqs as $req)
     			<tr>
     				<td>{{ $req->timestamp }}</td>
+					<td>{{ $req->Nation ID }}</td>
+					<td>{{ $req->Discord username }}</td>
     				<td>{{ $req->leader }}</td>
     				<td>{{ $req->message }}</td>
     				<td>
