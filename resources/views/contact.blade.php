@@ -21,13 +21,13 @@
                         <span class="help-block">The nation ID is the numbers at the end of the URL when you view your nation. EX: https://politicsandwar.com/nation/id=<strong>XXXXX</strong></span>
                     </div>
                 </div>
-                <div class="form-group{{ $errors->has('nID') ? ' has-error' : '' }}">
+                <div class="form-group{{ $errors->has('discord') ? ' has-error' : '' }}">
                     <label class="col-md-4 control-label">Discord username</label>
 
                     <div class="col-md-6">
                         <input type="text" class="form-control" name="nID" value="{{ old('nID') }}">
 
-                        @if ($errors->has('nID'))
+                        @if ($errors->has('Discord'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('nID') }}</strong>
                             </span>
@@ -53,8 +53,8 @@
     	<table class="table table-hover table-striped">
     		<tr>
     			<td>Timestamp</td>
-				<td>Nation ID</td>
-				<td>Discord username</td>
+				<td>Nation</td>
+				<td>Discord</td>
     			<td>Leader</td>
     			<td>Message</td>
     			<td>Status</td>
@@ -62,8 +62,8 @@
     		@foreach ($pendReqs as $req)
     			<tr>
     				<td>{{ $req->timestamp }}</td>
-					<td>{{ $req->Nation ID }}</td>
-					<td>{{ $req->Discord username }}</td>
+					<td>{{ $req->nID }}</td>
+					<td>{{ $req->discord }}</td>
     				<td>{{ $req->leader }}</td>
     				<td>{{ $req->message }}</td>
     				<td>
