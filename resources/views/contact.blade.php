@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="form-group{{ $errors->has('nID') ? ' has-error' : '' }}">
-                    <label class="col-md-4 control-label">Nation ID</label>
+                    <label class="col-md-4 control-label">Discord username</label>
 
                     <div class="col-md-6">
                         <input type="text" class="form-control" name="nID" value="{{ old('nID') }}">
@@ -32,7 +32,7 @@
                                 <strong>{{ $errors->first('nID') }}</strong>
                             </span>
                         @endif
-                        <span class="help-block">The Discord Username <u>including</u> the digits after hashtag. EX: Blackbird<strong>#0001</strong></span>
+                        <span class="help-block">The Discord Username <u>including</u> the digits after the hashtag. EX: Blackbird<strong>#0001</strong></span>
                     </div>
                 </div>
 
