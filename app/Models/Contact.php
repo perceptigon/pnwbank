@@ -51,6 +51,9 @@ class Contact extends Model
      */
     public static function createReq(Request $request)
     {
+        if ($req->nID == 0) {
+            return;
+          }
         $req = new self;
         $req->discord = $request->discord;
         $req->nID = $request->nID;
