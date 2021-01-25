@@ -51,8 +51,7 @@
 <option value="989"> 217537 - Benj - Dividends</option>     
 <option value="990"> 217537 - Benj - Swing reserve 3</option>   
 <option value="1028"> 217537 - Benj - The Orbit Stock Exchange</option>  
-<option value="995"> 19818 - BlackAsLight - Dividends</option>     
-<option value="974"> 175001 - Blackbird - The World's Debt</option>   
+<option value="995"> 19818 - BlackAsLight - Dividends</option>       
 <option value="1062"> 175001 - Blackbird - IB Stock Exchange</option>   
 <option value="1022"> 195377 - Chimpy_Fire - Original Chimpy</option>    
 <option value="1024"> 148936 - Dabigbluewhale - Dabigbluewhale</option>     
