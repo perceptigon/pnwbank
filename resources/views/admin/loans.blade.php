@@ -138,7 +138,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         @if (count($activeLoans) === 0)
-                            {{ App\Classes\Output::genAlert(["No active loans. Get your shit together Blackbird"], "info", "Well, fuck") }}
+                            {{ App\Classes\Output::genAlert(["No active loans. Get your shit together, sui"], "info", "Well, fuck") }}
                         @else
                             <div class="table-responsive">
                                 <table class="table table-striped table-hover dataTable" role="grid">

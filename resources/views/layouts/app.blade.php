@@ -98,9 +98,9 @@ if ($t < "05") {
 
 <a href="https://banque-lumiere.pro/admin" target="_blank">Control Panel</a> 
 |
-<a href="https://politicsandwar.com/alliance/id=7399" target="_blank">Rothschild Family</a> 
+<a href="https://politicsandwar.com/alliance/id=7399" target="_blank">Banque Lumiére</a> 
 |
-<a href="https://politicsandwar.com/nation/id=175001" target="_blank">Mayer Blackbird</a>
+<a href="https://politicsandwar.com/nation/id=49745" target="_blank">sui</a>
 
 
             </nav>
@@ -108,7 +108,7 @@ if ($t < "05") {
             <script src="{{ url("/lib/jquery/jquery.min.js") }}"></script>
             <script src="{{ url("/lib/bootstrap/default/js/bootstrap.min.js") }}"></script>
         </footer>
-        <!-- Blackbird is still the best person in the world ya fucks -->
+        <!-- Blackbird is still the best person in the world, ya fucks -->
     </body>
 @yield("scripts")
 </html>

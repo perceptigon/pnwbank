@@ -303,13 +303,13 @@ class Spies
                         $message .= "[b]Sabotage Nukes[/b] on [link=https://politicsandwar.com/nation/id=" . $assignment->defender->nID . "]" . $assignment->defender->nName . "[/link]\n";
                         break;
                 }
-                $message .= "[link=http://bank.blackbird.im/defense/spies/results/submit?nID=$attacker->nID&aID=$assignment->id]Submit Results[/link], Assignment ID: $assignment->id\n\n";
+                $message .= "[link=http://banque-lumiere.pro/defense/spies/results/submit?nID=$attacker->nID&aID=$assignment->id]Submit Results[/link], Assignment ID: $assignment->id\n\n";
                 $assignment->sent = true;
                 $assignment->save();
             }
 
             $message .= "After completing the assignments, please submit your results by clicking the \"Submit Results\" link. Everything should be prefilled for you except results, but in case it isn't, the assignment ID is listed.\n";
-            $message .= "If you are confused about the system, or spying in general, please take a look in RF discord. If you have an problems, contact Blackbird on Discord.";
+            $message .= "If you are confused about the system, or spying in general, please take a look in BL discord. If you have an problems, contact Sui (Billionaire sui#0802) on Discord.";
 
             $client->sendMessage($attacker->nRuler, "Spy Operation Order", $message);
         }
