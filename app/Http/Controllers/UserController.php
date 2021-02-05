@@ -334,7 +334,7 @@ class UserController extends Controller
                 else
                 {
                     // If this is false, then we didn't have enough resources to complete the transaction
-                    $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Archduke of Economics to solve this issue.");
+                    $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact Banque Lumiére to solve this issue.");
                 }
             }
             else
@@ -384,7 +384,7 @@ class UserController extends Controller
                 else
                 {
                     // If this is false, then we didn't have enough resources to complete the transaction
-                    $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Archduke of Economics to solve this issue.");
+                    $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Banque Lumiére to solve this issue.");
                 }
             }
             else
@@ -434,7 +434,7 @@ class UserController extends Controller
                 else
                 {
                     // If this is false, then we didn't have enough resources to complete the transaction
-                    $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Archduke of Economics to solve this issue.");
+                    $this->output->addError("The Bank didn't have enough funds to complete your transaction. Please contact the Banque Lumiére to solve this issue.");
                 }
             }
             else
@@ -461,7 +461,7 @@ class UserController extends Controller
     public function dashboard()
     {
         $defNation = DefenseNations::getNation(Auth::user()->nID);
-        if (! $defNation->inBK) // If they're not in Camelot, redirect to home because fuck them
+        if (! $defNation->inBK) // If they're not in RF, redirect to home because fuck them
             return redirect("/");
 
         $mmrScore = Warchest::mmrScoreFromDefNations($defNation);

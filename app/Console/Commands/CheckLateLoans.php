@@ -58,7 +58,7 @@ class CheckLateLoans extends Command
             $loans = Loans::getLateLoans();
             foreach ($loans as $loan)
             {
-                $message = "Hi $loan->leader, \n \n Your loan of $".number_format($loan->amount)." with the code $loan->code has not been paid. \n \n Please deposit $".number_format($loan->amount)." to the Rothschilds & Co. bank with the code in the transaction note otherwise you may face penalties.".PWFunctions::endMessage();
+                $message = "Hi $loan->leader, \n \n Your loan of $".number_format($loan->amount)." with the code $loan->code has not been paid. \n \n Please deposit $".number_format($loan->amount)." to the Banque Lumiére portal with the code in the transaction note otherwise you may face penalties.".PWFunctions::endMessage();
                 $this->client->sendMessage($loan->leader, "Late Loan Notice", $message);
             }
         }
