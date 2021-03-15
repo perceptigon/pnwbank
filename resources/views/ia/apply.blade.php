@@ -16,7 +16,7 @@ Aside from our unique banking portal, we also offer amazing financial products t
 <font color="black">
 As one of the world's largest independent financial advisory groups, we offer a distinct perspective that makes a meaningful difference to our clients, business and wealth.
 <br><br>
-<u>Admission by invite-only.</u>
+<a href="https://discord.gg/NwbnJv5H"><u>If you are interested in joining RF, create a ticket on our Discord server</u></a>
 <br><br>
 Rothschild Family is a peaceful entity that conducts the best ethics policies in dealing with any threats that might impact the community.</font>
 </p>
