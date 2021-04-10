@@ -29,8 +29,8 @@
                             <span class="info-box-number">{{ ($nation->hasSignedIn) ? "Yes" : "No" }}</span>
                         </div>
                     </div>
-                    <strong>If Orbis is at a war state, please follow below military requirements</strong>
                 </div>
+                <strong><h5>If Orbis is at a war state, please follow the below-mentioned military requirements</h5></strong>
             </div>
             <div class="row" style="font-size: 150%">
             <h4>Resources</h4>
