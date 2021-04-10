@@ -30,7 +30,6 @@
                         </div>
                     </div>
                 </div>
-                <strong><h5><font color="red">If Rothschild Family is at a war state, please follow the below-mentioned <u>mandatory</u> military requirements</font></h5></strong>
             </div>
             <div class="row" style="font-size: 150%">
             <h4>Resources</h4>
@@ -69,6 +68,7 @@
                 </table>
             </div>
         <hr>
+        <strong><h5><font color="red">If Rothschild Family is at a war state, please follow the below-mentioned <u>mandatory</u> military requirements</font></h5></strong>
         <h4>Military</h4>
         <div class="table-responsive">
             <table class="table table-hover table-striped sortable">
