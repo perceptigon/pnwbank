@@ -14,7 +14,7 @@ class MMR
     public static function soldiers(int $cities) : int
     {
         if ($cities <= 10) $soldiers = 6000 * $cities;
-        else $soldiers = 0;
+        else $soldiers = 15000 * $cities;
 
         return $soldiers;
     }
@@ -22,14 +22,14 @@ class MMR
     public static function tanks(int $cities) : int
     {
         if ($cities <= 10) $tanks = 250 * $cities;
-        else $tanks = 0;
+        else $tanks = 1250 * $cities;
 
         return $tanks;
     }
 
     public static function planes(int $cities) : int
     {
-        $planes = 90 * $cities;
+        $planes = 75 * $cities;
         return $planes;
     }
 
@@ -76,7 +76,7 @@ class MMR
 
     public static function ships(int $cities) : int
     {
-        $ships = 0;
+        $ships = 15 * $cities;
         return $ships;
     }
 
