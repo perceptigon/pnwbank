@@ -82,13 +82,13 @@ class MMR
 
     public static function missiles(int $cities) : int
     {
-        $missiles = 0;
+        $missiles = 50;
         return $missiles;
     }
 
     public static function nukes(int $cities) : int
     {
-        $nukes = 0;
+        $nukes = 50;
         return $nukes;
     }
 }
