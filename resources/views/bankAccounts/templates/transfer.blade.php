@@ -28,13 +28,11 @@
                             </optgroup>
 
                             <optgroup label="Rothschild Family Accounts">
-                            <option value="1100"> Blackbird - BLACK</option> 
-                            <option value="1093"> Factorian Kallio - FLPvR</option>
+                            <option value="1062"> Blackbird - IB Stock Exchange</option> 
+                            <option value="1139"> Factorian Kallio - Asset Management von Rothschild</option>
                             <option value="1091"> Loki - Loki investment fund</option>  
                             <option value="903"> Naruu - Frosties magical money printer</option> 
                             <option value="922"> Whizzy - Savings account 1</option> 
-
-                            <option value="1113"> FLPvR</option> 
 
                             <optgroup label="ONN Accounts">
 <option value="1057"> 226261 - ONN - Lyonia</option> 
