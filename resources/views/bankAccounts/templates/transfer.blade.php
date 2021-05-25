@@ -31,7 +31,7 @@
                             <option value="1062"> Blackbird - IB Stock Exchange</option> 
                             <option value="1139"> Factorian Kallio - Asset Management von Rothschild</option>
                             <option value="1091"> Loki - Loki investment fund</option>  
-                            <option value="903"> Naruu - Frosties magical money printer</option> 
+                            <option value="1181"> Naruu - Frosties magical money printer</option> 
                             <option value="922"> Whizzy - Savings account 1</option> 
 
                             <optgroup label="ONN Accounts">
@@ -42,8 +42,7 @@
 
                             <optgroup label="All Accounts <10/05/21>">
                             <option value="995"> nID: 19818 - Dividends</option>
-<option value="903"> nID: 29685 - Frosties magical money printer</option>
-<option value="977"> nID: 29685 - Frosties magical money printer</option>
+<option value="1181"> nID: 29685 - Frosties magical money printer</option>
 <option value="1122"> nID: 49745 - Min axct</option>
 <option value="1043"> nID: 49745 - Banque lumiere Charges account</option>
 <option value="1133"> nID: 49745 - fractional reserve lending interest </option>
