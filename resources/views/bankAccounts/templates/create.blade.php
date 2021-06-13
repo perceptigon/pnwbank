@@ -23,7 +23,7 @@
     <div class="col-md-6">
         <div class="panel panel-danger">
             <div class="panel-heading">
-                <h3 class="panel-title">Delete Account</h3>
+                '<'h3 class="panel-title">Delete Account</h3'>'
             </div>
             <div class="panel-body">
                 <form method="post" onsubmit="return confirm('Are you sure you want to delete this account?')">
