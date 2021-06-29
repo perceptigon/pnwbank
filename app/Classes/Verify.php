@@ -697,10 +697,11 @@ class Verify
     private function checkCityTimers() : bool
     {
         // First check the API's timer
-        if ($this->nation->cityProjectTimer > 12)
+       //RB:29/06/2021 if ($this->nation->cityProjectTimer > 12)
+       if ($this->nation->cityTimer > 12)
         {
             $this->eligible = false;
-            array_push($this->errors, "You've purchased a city or project in the last 9 days. Please wait ".($this->nation->cityProjectTimer - 12)." more turns.");
+            array_push($this->errors, "You've purchased a city or project in the last 9 days. Please wait ".($this->nation->cityTimer - 12)." more turns.");
 
             return false;
         }
@@ -1152,14 +1153,15 @@ class Verify
         return true;
     }
     /**
-     * Checks to make sure their cityProjectTimer is 0.
+     * Checks to make sure their cityTimer is 0.
      *
      * @deprecated This was a duplicate method that should never have been here. Don't use
      * @return bool
      */
     private function checkLastPurchase() : bool
     {
-        if ($this->nation->cityProjectTimer > 0)
+        //RB:29/06/2021if ($this->nation->cityProjectTimer > 0)
+        if ($this->nation->cityTimer > 0)
         {
             $this->eligible = false;
             array_push($this->errors, "You've already bought a city or project in the last 10 days");
