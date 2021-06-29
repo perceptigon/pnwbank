@@ -527,7 +527,8 @@ class Nation
         // Now set everything. This gon be ugly
         foreach ($json->cityids as $cID)
             array_push($this->cityIDs, intval($cID)); // Convert the string of the ID to the actual int
-        $this->cityProjectTimer = $json->cityprojecttimerturns;
+        //RB29/06/2021:$this->cityProjectTimer = $json->cityprojecttimerturns;
+        $this->cityProjectTimer = $json->turns_since_last_city;// to be changed DC
         $this->nID = intval($json->nationid);
         $this->nationName = $json->name;
         $this->preName = $json->prename;
