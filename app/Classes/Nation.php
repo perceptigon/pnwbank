@@ -15,12 +15,18 @@ class Nation
     public $cityIDs = [];
 
     /**
-     * The timer for the nation's city/project.
+     * The timer for the nation's project.
      *
      * @var int
      */
     public $cityProjectTimer;
-
+   
+     /**
+     * The timer for the nation's city
+     *
+     * @var int
+     */
+    public $cityTimer;
     /**
      * The nation's ID.
      *
@@ -528,7 +534,8 @@ class Nation
         foreach ($json->cityids as $cID)
             array_push($this->cityIDs, intval($cID)); // Convert the string of the ID to the actual int
         //RB29/06/2021:$this->cityProjectTimer = $json->cityprojecttimerturns;
-        $this->cityProjectTimer = $json->turns_since_last_city;// to be changed DC
+        $this->cityProjectTimer = $json->turns_since_last_project;
+        $this->cityTimer = $json->turns_since_last_city;
         $this->nID = intval($json->nationid);
         $this->nationName = $json->name;
         $this->preName = $json->prename;
