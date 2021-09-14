@@ -31,7 +31,8 @@
                             <option value="1226"> Blackbird - Terra Mariana</option> 
                             <option value="1139"> Factorian Kallio - Asset Management von Rothschild</option>
                             <option value="1186"> Loki - Loki: god of markets</option>  
-                            <option value="1181"> Naruu - Frosties magical money printer</option> 
+                            <option value="1181"> Naruu - Frosties magical money printer</option>
+                            <option value="1181"> Patton - CP</option>
                             <option value="1051"> Whizzy - My savings account</option> 
 
                             <optgroup label="ONN Accounts">
