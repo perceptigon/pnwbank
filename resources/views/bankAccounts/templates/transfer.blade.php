@@ -33,6 +33,7 @@
                             <option value="1186"> Loki - Loki: god of markets</option>  
                             <option value="1181"> Naruu - Frosties magical money printer</option>
                             <option value="1181"> Patton - CP</option>
+                            <option value="1178"> Patton - THCO (SW) Holdings </option>
                             <option value="1051"> Whizzy - My savings account</option> 
 
                             <optgroup label="ONN Accounts">
@@ -52,6 +53,7 @@
 <option value="1149"> nID: 49745 - AJAL funds </option>
 <option value="1182"> nID: 49745 - Brokerage funds </option>
 <option value="1010"> nID: 88504 - CP</option>
+<option value="1178"> nID: 88504 - THCO (SW) Holdings </option>
 <option value="1201"> nID: 90038 - asui</option>
 <option value="1114"> nID: 91386 - OWN Official Funds</option>
 <option value="1115"> nID: 91386 - Orbis International Corp Funds</option>
@@ -78,7 +80,6 @@
 <option value="1062"> nID: 175001 - IB Stock Exchange</option>
 <option value="1100"> nID: 175001 - BLACK</option>
 <option value="1177"> nID: 175001 - The Moonlight</option>
-<option value="1178"> nID: 175001 - THCO (SW) Holdings </option>
 <option value="1226"> nID: 175001 - Terra Mariana</option>
 <option value="1035"> nID: 187328 - alliance account</option>
 <option value="1065"> nID: 187328 - egg bank capital</option>
