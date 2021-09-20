@@ -77,6 +77,7 @@
 <option value="1147"> nID: 153339 - Glorious</option>
 <option value="1186"> nID: 162656 - Loki: god of markets</option>
 <option value="1137"> nID: 163441 - Jarrett</option>
+<option value="1227"> nID: 164932 - 2048</option>
 <option value="1177"> nID: 175001 - The Moonlight</option>
 <option value="1226"> nID: 175001 - Terra Mariana</option>
 <option value="1035"> nID: 187328 - alliance account</option>
