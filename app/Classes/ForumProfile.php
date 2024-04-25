@@ -1,6 +1,10 @@
+use App\Forums\ForumFields;
+use App\Forums\Forums;
+
 <?php
 
 namespace App\Classes;
+
 
 class ForumProfile
 {
@@ -16,7 +20,7 @@ class ForumProfile
      *
      * @var array
      */
-    public $profile;
+    private $profile;
 
     /**
      * The user's member ID on the forums.
@@ -30,14 +34,14 @@ class ForumProfile
      *
      * @var int
      */
-    public $posts;
+    private $posts;
 
     /**
      * An array of integers with their group IDs.
      *
      * @var array
      */
-    public $groups = [];
+    private $groups = [];
 
     /**
      * ForumProfile constructor.
@@ -53,29 +57,28 @@ class ForumProfile
      * Calls functions to retrieve the member's forum profile.
      *
      * @return void
-     * @throws \Exception
+     * @throws ForumProfileException
      */
-    public function getForumProfile()
+    public function getForumProfile(): void
     {
-        if (! $this->getMemberID())
-            throw new \Exception("Nation ID not found in profile fields"); // We'll throw another exception here so it can go up and stop the request
+        if (!$this->getMemberID()) {
+            throw new ForumProfileException("Nation ID not found in profile fields");
+        }
+
         $this->fetchProfile();
         $this->organizeProfile();
     }
 
     /**
-     * Get and stores the member's ID from the ForumFields table in the forums database.
+     * Get the member's ID from the ForumFields table in the forums database.
      *
      * @return bool
      */
-    private function getMemberID() : bool
+    private function getMemberID(): bool
     {
-        try // We get the member ID by querying the profile fields table for the nation ID field
-        {
-            $fields = \App\Forums\ForumFields::where("field_2", $this->nID)->firstOrFail();
-        }
-        catch (\Exception $ex) // If it throws an exception, then the field doesn't exist
-        {
+        try {
+            $fields = ForumFields::where("field_2", $this->nID)->firstOrFail();
+        } catch (\Exception $ex) {
             return false;
         }
 
@@ -85,44 +88,75 @@ class ForumProfile
     }
 
     /**
-     * Tries to fetch the user's profile from the forum API.
+     * Fetches the user's profile from the forum API.
      *
-     * @return void
-     * @throws \Exception
+     * @throws ForumProfileException
      */
-    private function fetchProfile()
+    private function fetchProfile(): void
     {
         $forum = new Forums();
         $profile = $forum->getMember($this->mID);
 
         $json = \json_decode($profile, true);
 
-        if (isset($json["errorCode"]))
-            throw new \Exception("Couldn't get member profile - {$json["errorCode"]} - {$json["errorMessage"]}");
-        $this->profile = $json; // Save the entire array
+        if (isset($json["errorCode"])) {
+            throw new ForumProfileException("Couldn't get member profile - {$json["errorCode"]} - {$json["errorMessage"]}");
+        }
+
+        $this->profile = $json;
     }
 
     /**
      * Takes the user profile and organizes it for easy use.
      *
-     * @throws \Exception
+     * @throws ForumProfileException
      */
-    private function organizeProfile() // Set things that I need as a property of this object
+    private function organizeProfile(): void
     {
         array_push($this->groups, $this->profile["primaryGroup"]["id"]);
 
-        // Run loop to store secondary groups
-        foreach ($this->profile["secondaryGroups"] as $sec)
+        foreach ($this->profile["secondaryGroups"] as $sec) {
             array_push($this->groups, $sec["id"]);
+        }
 
-        if (! isset($this->profile["posts"])) // I have to manually add the posts field to the API, so if it isn't set (cuz I updated) throw an exception
-            throw new \Exception("Couldn't get member's post count");
-        /*
-         * So I remember in the future, in order to get the post count on the forum API do this
-         * Go to /system/Member/Member.php (On the forum software obviously)
-         * In the function "apiOutput()" add to the return array "'posts' => $this->member_posts
-         */
+        if (!isset($this->profile["posts"])) {
+            throw new ForumProfileException("Couldn't get member's post count");
+        }
 
         $this->posts = $this->profile["posts"];
     }
+
+    /**
+     * Get the member's profile.
+     *
+     * @return array
+     */
+    public function getProfile(): array
+    {
+        return $this->profile;
+    }
+
+    /**
+     * Get the member's total amount of posts.
+     *
+     * @return int
+     */
+    public function getPosts(): int
+    {
+        return $this->posts;
+    }
+
+    /**
+     * Get the member's group IDs.
+     *
+     * @return array
+     */
+    public function getGroups(): array
+    {
+        return $this->groups;
+    }
+}
+
+class ForumProfileException extends \Exception
+{
 }

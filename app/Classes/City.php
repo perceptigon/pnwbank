@@ -2,12 +2,13 @@
 
 namespace App\Classes;
 
-// I don't feel like commenting this right now and making it nice
 class City
 {
-    public function __construct($cID) {
+    public function __construct($cID)
+    {
         $jsondata = file_get_contents("https://politicsandwar.com/api/city/id=$cID&key=".env('PW_API_KEY'));
         $json = json_decode($jsondata, true);
+
         $this->name = $json["name"];
         $this->founded = $json["founded"];
         $this->age = $json["age"];
@@ -47,7 +48,7 @@ class City
         $this->barracks = $json["imp_barracks"];
         $this->factory = $json["imp_factory"];
         $this->airBase = $json["imp_hangar"];
-        $this->drydock = $json["imp_drydock"]; // TODO fix this stuff
+        $this->drydock = $json["imp_drydock"];
         $this->basepop = $json["basepop"];
         $this->basePopDensity = $json["basepopdensity"];
         $this->minWage = $json["minimumwage"];
