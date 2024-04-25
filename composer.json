@@ -1,8 +1,8 @@
 {
-    "name": "yosodog/BKBank",
-    "description": "Rothschilds & Co. Bank",
+    "name": "perceptigon",
+    "description": "Cayman Islands",
     "minimum-stability": "dev",
-    "keywords": ["bank", "Rothschilds & Co."],
+    "keywords": ["bank", "Cayman Islands"],
     "license": "",
     "type": "project",
     "require": {
