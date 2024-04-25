@@ -1,19 +1,17 @@
 <?php
 
-/**
- * Laravel - A PHP Framework For Web Artisans.
- *
- * @author   Taylor Otwell <taylorotwell@gmail.com>
- */
-$uri = urldecode(
-    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
-);
+$uri = filter_input(INPUT_SERVER, 'REQUEST_URI', FILTER_SANITIZE_URL);
+$uri = urldecode(parse_url($uri, PHP_URL_PATH));
 
-// This file allows us to emulate Apache's "mod_rewrite" functionality from the
-// built-in PHP web server. This provides a convenient way to test a Laravel
-// application without having installed a "real" web server software here.
-if ($uri !== '/' && file_exists(__DIR__.'/public'.$uri)) {
+$indexFilePath = __DIR__.DIRECTORY_SEPARATOR.'public'.DIRECTORY_SEPARATOR.'index.php';
+
+if ($uri !== '/' && file_exists(__DIR__.DIRECTORY_SEPARATOR.'public'.$uri)) {
     return false;
+} elseif (file_exists($indexFilePath)) {
+    require_once $indexFilePath;
+} else {
+    // Handle error, file not found
+    header("HTTP/1.0 404 Not Found");
+    echo "File not found: $indexFilePath";
+    exit;
 }
-
-require_once __DIR__.'/public/index.php';
